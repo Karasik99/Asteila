@@ -4,6 +4,7 @@ const BURGERSPAN= document.querySelector('.header__burger-span')
 const ASIDE = document.querySelector('.aside')
 const ASIDEBTN = document.querySelector('.aside__button')
 
+
 BURGER.addEventListener('click',((event)=>{
     if(event.target.closest('.header__burger') || event.target.closest('.header__burger-span')){
         ASIDE.classList.add('active')
@@ -17,3 +18,5 @@ ASIDEBTN.addEventListener('click',((event)=>{
         BODY.classList.remove('activebody')
     }
 }))
+
+

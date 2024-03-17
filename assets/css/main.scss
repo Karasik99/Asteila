@@ -24,6 +24,7 @@ a{
 
 .body{
     overflow-y: scroll;
+    background-color: #f1f1f1;
 }
 
 .activebody{
@@ -33,6 +34,7 @@ a{
 
 .header{
     position: relative;
+    padding-bottom: 4rem;
 
     &__nav{
         background-color: #313131;
@@ -85,6 +87,10 @@ a{
         align-items: center;
         justify-content: center;
         gap: .5rem;
+    }
+
+    option{
+        background-image: url('../images/icons/ru.png');
     }
 
     &__item-2 a{
@@ -218,7 +224,7 @@ a{
     
     &__content{
         max-width: 50%;
-        padding-top: 8rem;
+        padding-top: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -418,8 +424,96 @@ a{
 
 }
 
+.advantages{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
 
-@media (max-width:890px) {
+    &__title{
+        color: #313131;
+        font-size: 2rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+
+    &__title span{
+        color: #396258;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &__card{
+        border-radius: .5rem;
+        gap: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1.5rem;
+        background-color: #f8f8f8;
+        width: 30%;
+    }
+
+    &__card img{
+        min-width: 3.2rem;
+        min-height: 3.2rem;
+    }
+
+    &__text{
+        color: #313131;
+        font-size: clamp(.8rem,1vw,1.2rem);
+        font-weight: 400;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+    .advantages{
+        padding: 1rem;
+
+        &__content{
+            justify-content: start;
+        }
+
+        &__card{
+            width: 100%;
+            padding: 1rem;
+            justify-content: flex-start;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width:1040px) {
     .header__nav,
     .header__menu-3,
     .header__btn{

@@ -24,6 +24,7 @@ a {
 
 .body {
   overflow-y: scroll;
+  background-color: #f1f1f1;
 }
 
 .activebody {
@@ -32,6 +33,7 @@ a {
 
 .header {
   position: relative;
+  padding-bottom: 4rem;
 }
 .header__nav {
   background-color: #313131;
@@ -75,6 +77,9 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+.header option {
+  background-image: url("../images/icons/ru.png");
 }
 .header__item-2 a {
   color: #dfd3b5;
@@ -189,7 +194,7 @@ a {
 }
 .header__content {
   max-width: 50%;
-  padding-top: 8rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,7 +364,65 @@ a {
   max-height: 25px;
 }
 
-@media (max-width: 890px) {
+.advantages {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+.advantages__title {
+  color: #313131;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.advantages__title span {
+  color: #396258;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.advantages__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.advantages__card {
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  width: 30%;
+}
+.advantages__card img {
+  min-width: 3.2rem;
+  min-height: 3.2rem;
+}
+.advantages__text {
+  color: #313131;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .advantages {
+    padding: 1rem;
+  }
+  .advantages__content {
+    justify-content: start;
+  }
+  .advantages__card {
+    width: 100%;
+    padding: 1rem;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 1040px) {
   .header__nav,
   .header__menu-3,
   .header__btn {
