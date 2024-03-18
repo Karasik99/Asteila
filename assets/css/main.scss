@@ -466,6 +466,7 @@ a{
     &__card img{
         min-width: 3.2rem;
         min-height: 3.2rem;
+        border-radius: .5rem;
     }
 
     &__text{
@@ -473,6 +474,170 @@ a{
         font-size: clamp(.8rem,1vw,1.2rem);
         font-weight: 400;
     }
+
+}
+
+.directions{
+    width: 100%;
+    padding-bottom: 3rem;
+
+    &__title{
+        color: #303030;
+        font-size: 2rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+
+    &__content{
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__card img{
+        max-width: 3.1rem;
+        max-height: 3.1rem;
+        border-radius: .5rem;
+    }
+
+    &__card{
+        padding: 1rem;
+        background-color: #ffffff;
+        display: flex;
+        gap: 1rem;
+        border-radius: 1rem;
+        width: 100%;
+        height: -webkit-fill-available;
+
+        &-title{
+            color: #313131;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        &-text{
+            color: #838383;
+            font-size: .9rem;
+        }
+
+        &-btn{
+            border: none;
+            color: #ffffff;
+            font-size: .9rem;
+            font-weight: 500;
+            border-radius: .5rem;
+            background-color: #464646;
+            padding: .8rem 2rem;
+        }
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    &__slider-wrapper{
+        width: clamp(24rem,36vw,37.5rem);
+        height: clamp(24rem,31vw,31.5rem);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__slider{
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        flex-direction: column;
+
+        &-line{
+            width: inherit;
+            height: inherit;
+            display: flex;
+            transition: all 3s;
+        }
+    }
+
+    &__slider-line img{
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+
+    &__buttons{
+        margin-top: .7rem;
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+        gap: .5rem;
+
+        &-prev{
+            padding: .2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #396258;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all .4s;
+        }
+
+        &-prev:hover{
+            transition: all .4s;
+            border: 2px solid #d6bd7e;
+            border-radius: 25%;
+
+        }
+
+        &-next{
+            transform: rotate(180deg);
+            background-color: transparent;
+        }
+    }
+
+    &__buttons-prev img{
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+    }
+
+    &__dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .2rem;
+    }
+
+    &__dot{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #396258;
+        cursor: pointer;
+    }
+
+    &__dot.active{
+        background-color: #396258;
+
+    }
+    
 
 }
 
@@ -493,7 +658,45 @@ a{
 
 
 
+
+
+
+
+@media (max-width:1000px) {
+    .directions{
+        &__content{
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .directions{
+        &__slider-wrapper{
+            display: none;
+            pointer-events: none;
+        }
+    }
+}
+
+
 @media (max-width:1200px) {
+    .advantages{
+        padding: 1rem;
+
+        &__content{
+            justify-content: start;
+        }
+
+        &__card{
+            width: 100%;
+            padding: 1rem;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width:768px) {
     .advantages{
         padding: 1rem;
 
