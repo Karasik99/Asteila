@@ -78,9 +78,6 @@ a {
   justify-content: center;
   gap: 0.5rem;
 }
-.header option {
-  background-image: url("../images/icons/ru.png");
-}
 .header__item-2 a {
   color: #dfd3b5;
   font-size: clamp(0.9rem, 1.1vw, 1.2rem);
@@ -572,19 +569,6 @@ a {
     justify-content: flex-start;
   }
 }
-@media (max-width: 768px) {
-  .advantages {
-    padding: 1rem;
-  }
-  .advantages__content {
-    justify-content: start;
-  }
-  .advantages__card {
-    width: 100%;
-    padding: 1rem;
-    justify-content: flex-start;
-  }
-}
 @media (max-width: 1040px) {
   .header__nav,
   .header__menu-3,
@@ -599,6 +583,26 @@ a {
   .header__logo {
     width: 150px;
     height: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .advantages {
+    padding: 1rem;
+  }
+  .advantages__content {
+    justify-content: start;
+  }
+  .advantages__card {
+    width: 100%;
+    padding: 1rem;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 425px) {
+  .header__info {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/header-bg-2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 @media (max-width: 350px) {

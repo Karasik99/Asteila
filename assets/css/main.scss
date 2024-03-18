@@ -89,10 +89,6 @@ a{
         gap: .5rem;
     }
 
-    option{
-        background-image: url('../images/icons/ru.png');
-    }
-
     &__item-2 a{
         color: #dfd3b5;
         font-size: clamp(.9rem,1.1vw,1.2rem);
@@ -696,23 +692,6 @@ a{
     }
 }
 
-@media (max-width:768px) {
-    .advantages{
-        padding: 1rem;
-
-        &__content{
-            justify-content: start;
-        }
-
-        &__card{
-            width: 100%;
-            padding: 1rem;
-            justify-content: flex-start;
-        }
-    }
-
-}
-
 
 
 
@@ -733,7 +712,31 @@ a{
         width: 150px;
         height: 75px;
     }
+}
 
+@media (max-width:768px) {
+    .advantages{
+        padding: 1rem;
+
+        &__content{
+            justify-content: start;
+        }
+
+        &__card{
+            width: 100%;
+            padding: 1rem;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width:425px){
+    .header__info{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.9)),url('../images/header-bg-2.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 }
 
 @media (max-width:350px){
