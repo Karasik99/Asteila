@@ -126,7 +126,7 @@ a{
 
     &__logo{
         width: 200px;
-        height: 100px;
+        height: 3.1rem;
         background-color: green;
     }
 
@@ -482,6 +482,8 @@ a{
         font-size: 2rem;
         font-weight: 600;
         padding-bottom: 1rem;
+        padding-left: 3rem;
+
     }
 
     &__content{
@@ -637,6 +639,70 @@ a{
 
 }
 
+.consultation{
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.9)),url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__title{
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    &__form{
+        display: flex;
+        gap: .5rem;
+        justify-content: center;
+        align-items: center;
+
+        &-text{
+            border: none;
+            padding: 1rem;
+            border-radius: .3rem;
+            background-color: #949090;
+            opacity: .8;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        &-text::placeholder{
+            color: #fff;
+        }
+        &-text:focus{
+            outline: none;
+            box-shadow: none;
+        }
+
+        &-btn{
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: .3rem;
+            background-color: #dfd3b5;
+            cursor: pointer;
+            margin-left: 1rem;
+            transition: all .4s;
+        }
+
+        &-btn:hover{
+            transition: all .4s;
+            background-color: #d6bd7e;
+        }
+    }
+
+
+
+}
 
 
 
@@ -649,8 +715,11 @@ a{
 
 
 
-
-
+@media (max-width:1200px) {
+    .consultation__content{
+        flex-direction: column;
+    }
+}
 
 
 
@@ -666,11 +735,30 @@ a{
     }
 }
 
+@media (max-width:940px) {
+    .consultation__form{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .consultation__title{
+        text-align: center;
+    }
+    .consultation__form-btn{
+        margin-left: 0;
+        padding: 1rem 4rem;
+    }
+
+}
+
 @media (max-width:767px) {
     .directions{
         &__slider-wrapper{
             display: none;
             pointer-events: none;
+        }
+        &__card{
+            height: max-content;
         }
     }
 }
