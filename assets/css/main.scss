@@ -704,7 +704,83 @@ a{
 
 }
 
+.jobswithus{
 
+    &__title{
+        color: #303030;
+        font-size: 2rem;
+        font-weight: 500;
+        padding-bottom: 2rem;
+    }
+
+    &__title span{
+        color: #396258;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__card{
+        min-width: 27.5rem;
+        width: 100%;
+        min-height: 7.8rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: .3rem;
+        padding: 2rem 4rem; 
+        border-radius: 1rem;
+        background-color: #fff;
+
+        &-img{
+            position: absolute;
+            border-radius: 50%;
+            top: 32%;
+            left: -5%;
+        }
+
+        &-title{
+            color: #313131;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        &-text{
+            color: #949090;
+            font-size: 1rem;
+        }
+    }
+
+    &__gallery{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    &__gallery img{
+        max-width: 37.5rem;
+    }
+
+
+}
 
 
 
@@ -718,6 +794,27 @@ a{
 @media (max-width:1200px) {
     .consultation__content{
         flex-direction: column;
+    }
+    .jobswithus{
+
+        &__gallery img{
+            max-width: 29.5rem;
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .jobswithus{
+
+        &__content{
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__gallery{
+            display: none;
+            pointer-events: none;
+        }
     }
 }
 
@@ -746,9 +843,26 @@ a{
     }
     .consultation__form-btn{
         margin-left: 0;
-        padding: 1rem 4rem;
+        padding: 1rem 4.02rem;
     }
 
+}
+
+@media (max-width:768px) {
+    .jobswithus{
+        &__card{
+            min-width: auto;
+            width: 100%;
+            padding: 2rem 3rem; 
+        }}
+    
+    .directions__title{
+        padding-left: 1rem;
+    }
+    // .header__info-btn-2{
+    //     padding: 0.7rem 2rem;
+    // }
+    
 }
 
 @media (max-width:767px) {
@@ -827,7 +941,7 @@ a{
     }
 }
 
-@media (max-width:350px){
+@media (max-width:450px){
     .header__info-btn-2{
         padding: 0.7rem 2rem;
     }

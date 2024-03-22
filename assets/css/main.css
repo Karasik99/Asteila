@@ -600,9 +600,86 @@ a {
   background-color: #d6bd7e;
 }
 
+.jobswithus__title {
+  color: #303030;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+.jobswithus__title span {
+  color: #396258;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.jobswithus__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.jobswithus__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.jobswithus__card {
+  min-width: 27.5rem;
+  width: 100%;
+  min-height: 7.8rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.3rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+.jobswithus__card-img {
+  position: absolute;
+  border-radius: 50%;
+  top: 32%;
+  left: -5%;
+}
+.jobswithus__card-title {
+  color: #313131;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.jobswithus__card-text {
+  color: #949090;
+  font-size: 1rem;
+}
+.jobswithus__gallery {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.jobswithus__gallery img {
+  max-width: 37.5rem;
+}
+
 @media (max-width: 1200px) {
   .consultation__content {
     flex-direction: column;
+  }
+  .jobswithus__gallery img {
+    max-width: 29.5rem;
+  }
+}
+@media (max-width: 1023px) {
+  .jobswithus__content {
+    justify-content: center;
+    align-items: center;
+  }
+  .jobswithus__gallery {
+    display: none;
+    pointer-events: none;
   }
 }
 @media (max-width: 1000px) {
@@ -621,7 +698,17 @@ a {
   }
   .consultation__form-btn {
     margin-left: 0;
-    padding: 1rem 4rem;
+    padding: 1rem 4.02rem;
+  }
+}
+@media (max-width: 768px) {
+  .jobswithus__card {
+    min-width: auto;
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+  .directions__title {
+    padding-left: 1rem;
   }
 }
 @media (max-width: 767px) {
@@ -682,7 +769,7 @@ a {
     background-position: center center;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   .header__info-btn-2 {
     padding: 0.7rem 2rem;
   }
