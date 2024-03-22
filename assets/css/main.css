@@ -600,6 +600,10 @@ a {
   background-color: #d6bd7e;
 }
 
+.jobswithus {
+  width: 100%;
+  margin-bottom: 3rem;
+}
 .jobswithus__title {
   color: #303030;
   font-size: 2rem;
