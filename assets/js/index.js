@@ -3,6 +3,8 @@ const BODY = document.querySelector('.body')
 const BURGERSPAN= document.querySelector('.header__burger-span')
 const ASIDE = document.querySelector('.aside')
 const ASIDEBTN = document.querySelector('.aside__button')
+const MOVETEXTCONTAINER = document.querySelector('.offers__cards')
+const MOVETEXT = document.querySelectorAll('.offers__card-text')
 let OFFSET = 0
 let INDEX = 0
 let BTNNEXT = document.querySelector('.directions__buttons-next')
@@ -14,6 +16,26 @@ let COUNT = document.querySelectorAll('.directions__slider-line > img')
 BTNNEXT.addEventListener('click', (e)=>{SliderMoveRight(e)})
 BTNPREV.addEventListener('click', (e)=>{SliderMoveLeft(e)})
 DOTS.addEventListener('click',(e)=>{SliderMoveonclickDots(e)})
+
+
+
+
+MOVETEXTCONTAINER.addEventListener('click',((event)=>{
+    MOVETEXT.forEach((event)=>{
+        event.classList.remove('active')
+    })
+    if(event.target.closest('.offers__card-text')){
+        event.target.classList.add('active')
+    }
+}))
+
+BODY.addEventListener('click',((event)=>{
+    if(!event.target.closest('.offers__card-text')){
+        MOVETEXT.forEach((event)=>{
+            event.classList.remove('active')
+        })
+    }
+}))
 
 BURGER.addEventListener('click',((event)=>{
     if(event.target.closest('.header__burger') || event.target.closest('.header__burger-span')){
@@ -46,9 +68,6 @@ function SliderMoveRight(e){
     }
 }
 
-BTNPREV.addEventListener('click',((event)=>{
-    
-}))
 
 function SliderMoveLeft(e){
     if(e.target.closest('.directions__buttons-prev')){
