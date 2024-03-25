@@ -936,6 +936,14 @@ hr {
   font-weight: 600;
   color: #fff;
 }
+.calculator__content .range-container-span,
+.calculator__content .pipe-container-span,
+.calculator__content .light-container-span,
+.calculator__content .angles-container-span {
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-weight: 600;
+  color: #999;
+}
 .calculator__content-form {
   width: 100%;
   display: flex;
@@ -1013,9 +1021,9 @@ hr {
   color: #fff;
 }
 .calculator__content-range-value, .calculator__content-pipe-value, .calculator__content-light-value, .calculator__content-angles-value, .calculator__content__summ-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 600;
   color: #999;
-  font-weight: 400;
 }
 .calculator__content__summ-result {
   font-size: 1.5rem;
@@ -1116,6 +1124,12 @@ hr {
   }
   .directions__title {
     padding-left: 1rem;
+  }
+  .calculator__content {
+    max-width: 100%;
+  }
+  .calculator__content-form {
+    gap: 3rem;
   }
 }
 @media (max-width: 767px) {
