@@ -615,6 +615,100 @@
             </div>
         </section>
     </div>
+    <div class="calculator">
+        <div class="borders">
+            <div class="calculator__content">
+                <h3 class="calculator__content-title">
+                    Конфигуратор ремонта
+                </h3>
+
+                <form class="calculator__content-form" action="" method="post">
+                    <div class="range-container">
+                        <div class="calculator__content-container">
+                            <img src="./assets/images/icons/crossroad.png" alt="">
+                            <label for="m2">
+                                Площадь потолка
+                            </label>
+                            <span class="calculator__content-range-value">0</span>
+                        </div>
+                            <input value="0" min="0" max="500" class="calculator__content-range"  type="range" name="m2" id="m2">
+    
+                    </div>
+                    <div class="pipe-container">
+                        <div class="calculator__content-container">
+                            <img src="./assets/images/icons/pipe.png" alt="">
+                            <label for="pipe">
+                                Количество труб, <br>
+                                уходящих в потолок (шт.)
+                            </label>
+                            <span class="calculator__content-pipe-value">0</span>
+                        </div>
+                        <div class="calculator__content-btns pipe">
+                            <button type="button" class="calculator__content-btns-add add-pipes">добавить</button>
+                            <button type="button" class="calculator__content-btns-remove remove-pipes">удалить</button>
+                        </div>
+                    </div>
+                    <div class="light-container">
+                        <div class="calculator__content-container">
+                            <img src="./assets/images/icons/light.png" alt="">
+                            <label for="light">
+                                Количество светильников или люстр (шт.)
+                            </label>
+                            <span class="calculator__content-light-value">0</span>
+                        </div>
+                        <div class="calculator__content-btns light">
+                            <button type="button" class="calculator__content-btns-add add-light">добавить</button>
+                            <button type="button" class="calculator__content-btns-remove remove-light">удалить</button>
+                        </div>
+                    </div>
+                    <div class="angles-container">
+                        <div class="calculator__content-container">
+                            <img src="./assets/images/icons/angles.png" alt="">
+                            <label for="angles">
+                                Количество углов, (шт.)
+                            </label>
+                            <span class="calculator__content-angles-value">0</span>
+                        </div>
+                        <div class="calculator__content-btns angles">
+                            <button type="button" class="calculator__content-btns-add add-angles">добавить</button>
+                            <button type="button" class="calculator__content-btns-remove remove-angles">удалить</button>
+                        </div>
+                    </div>
+                    <div class="calculator__content-summ">
+                        <h4 class="calculator__content__summ-title">Сумма</h4>
+                        <div class="calculator__content-summ-info">
+                            <p class="calculator__content-summ-info-title">Итого:</p>
+                            <p class="calculator__content-summ-info-result">
+                                0
+                            <p class="calculator__content-summ-info-currency">€</p>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="calculator__content-form-people-info-container">
+                        <label for="name-2">
+                            <span>Ваше Имя</span>
+                            <input type="text" name="name-2" required
+                            placeholder="Введите имя">
+                        </label>
+                        <label for="tel-2">
+                            <span>Ваш Телефон</span>
+                            <input type="tel" name="tel-2" required
+                            placeholder="+123456789">
+                        </label>
+                        <label for="email-2">
+                            <span>Ваша Почта</span>
+                            <input type="email" name="email-2" required
+                            placeholder="example@mail.com">
+                        </label>
+                        <button class="calculator__content-form-people-info-container-btn" type="submit">
+                            Отправить
+                        </button>
+                    </div>                              
+                </form>
+
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/js/index.js"></script>
 </body>
