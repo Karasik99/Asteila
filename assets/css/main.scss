@@ -39,7 +39,7 @@ hr{
 
 
 .header{
-    position: relative;
+
     padding-bottom: 4rem;
 
     &__nav{
@@ -1306,10 +1306,11 @@ hr{
         height: max-content;
         overflow: hidden;
         transition: all .4s;
+        opacity: 0;
     }
     
     &-menu.active{
-        opacity: 0;
+        opacity: 1;
         transition: all .4s;
     }
 
@@ -1374,7 +1375,6 @@ hr{
 
     
 }
-
 
 
 @media (max-width:1000px) {

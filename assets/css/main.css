@@ -38,7 +38,6 @@ hr {
 }
 
 .header {
-  position: relative;
   padding-bottom: 4rem;
 }
 .header__nav {
@@ -1125,9 +1124,10 @@ hr {
   height: max-content;
   overflow: hidden;
   transition: all 0.4s;
+  opacity: 0;
 }
 .messangers__links-menu.active {
-  opacity: 0;
+  opacity: 1;
   transition: all 0.4s;
 }
 .messangers__links-link {
