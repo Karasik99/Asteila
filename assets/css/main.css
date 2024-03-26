@@ -28,6 +28,7 @@ hr {
 }
 
 .body {
+  position: relative;
   overflow-y: scroll;
   background-color: #f1f1f1;
 }
@@ -1075,6 +1076,74 @@ hr {
   font-weight: 400;
 }
 
+.messangers__links {
+  z-index: 1000;
+  position: fixed;
+  top: 10rem;
+  right: 5%;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.messangers__links-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  animation: Skale 2s infinite;
+}
+.messangers__links-btn img {
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+@keyframes Skale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.messangers__links-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: max-content;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.messangers__links-menu.active {
+  opacity: 0;
+  transition: all 0.4s;
+}
+.messangers__links-link {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.messangers__links-link img {
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
 @media (max-width: 1200px) {
   .consultation__content {
     flex-direction: column;
@@ -1186,6 +1255,9 @@ hr {
   .header__logo {
     width: 150px;
     height: 75px;
+  }
+  .messangers__links {
+    top: 7rem;
   }
 }
 @media (max-width: 768px) {

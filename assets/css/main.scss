@@ -28,6 +28,7 @@ hr{
 }
 
 .body{
+    position: relative;
     overflow-y: scroll;
     background-color: #f1f1f1;
 }
@@ -1253,6 +1254,81 @@ hr{
 }
 
 
+.messangers__links{
+    z-index: 1000;
+    position: fixed;
+    top: 10rem;
+    right: 5%;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:60px;
+        height: 60px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        animation: Skale 2s infinite;
+    }
+    
+    &-btn img{
+        border-radius: 50%;
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+
+    @keyframes Skale {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+    &-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        height: max-content;
+        overflow: hidden;
+        transition: all .4s;
+    }
+    
+    &-menu.active{
+        opacity: 0;
+        transition: all .4s;
+    }
+
+    &-link{
+        width:60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &-link img{
+        border-radius: 50%;
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+}
+
 
 
 
@@ -1295,6 +1371,8 @@ hr{
     .offers__card{
         width: 100%;
     }
+
+    
 }
 
 
@@ -1342,6 +1420,7 @@ hr{
     .calculator__content-form{
         gap: 3rem;
     }
+
     
 }
 
@@ -1415,6 +1494,10 @@ hr{
     .header__logo{
         width: 150px;
         height: 75px;
+    }
+
+    .messangers__links{
+        top: 7rem;
     }
 }
 
