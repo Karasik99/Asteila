@@ -37,6 +37,97 @@ hr {
   overflow-y: hidden;
 }
 
+.language {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.active-lang {
+  cursor: pointer;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  position: relative;
+}
+
+.active-lang img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+body {
+  top: 0 !important;
+}
+
+.skiptranslate {
+  display: none;
+  height: 0;
+}
+
+.Countries {
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  left: 0;
+  width: inherit;
+  opacity: 0;
+  pointer-events: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.Countries.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.coutry {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.ru {
+  background-image: url("../images/icons/ru.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.en {
+  background-image: url("../images/icons/en.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.latvia {
+  background-image: url("../images/icons/latvia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lithuania {
+  background-image: url("../images/icons/lithuania.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header {
   padding-bottom: 4rem;
 }
@@ -204,7 +295,6 @@ hr {
 }
 .header__title {
   color: #ffffff;
-  font-size: 3.5rem;
   font-weight: 600;
   padding-bottom: 1rem;
   font-size: clamp(2rem, 3.5vw, 3.5rem);
@@ -1078,7 +1168,7 @@ hr {
 .messangers__links {
   z-index: 1000;
   position: fixed;
-  top: 10rem;
+  top: 20rem;
   right: 5%;
   width: 60px;
   display: flex;
@@ -1241,7 +1331,7 @@ hr {
     justify-content: flex-start;
   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 1150px) {
   .header__nav,
   .header__menu-3,
   .header__btn {

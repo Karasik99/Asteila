@@ -236,3 +236,20 @@ LINKS.addEventListener('click',((e)=>{
         MENU.classList.toggle('active')
     }
 }))
+
+
+let ACTIVECOUNTRY = document.querySelector('.active-lang')
+let COUNTRIES = document.querySelector('.Countries')
+
+ACTIVECOUNTRY.addEventListener('click',((event)=>{
+    if(event.target.closest('.active-lang')){
+        COUNTRIES.classList.toggle('active')
+    }
+}))
+
+
+
+
+
+
+
