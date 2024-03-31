@@ -1300,13 +1300,13 @@ hr {
   padding-bottom: 4rem;
 }
 .popup-form__title {
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.9rem, 2vw, 2rem);
   font-weight: 600;
   color: #fff;
   text-align: center;
 }
 .popup-form-text {
-  font-size: 1rem;
+  font-size: clamp(0.7rem, 1vw, 1.1rem);
   font-weight: 600;
   color: #fff;
   text-align: center;
@@ -1444,6 +1444,10 @@ hr {
   }
   .popup-form {
     width: 80%;
+  }
+  .popup-form__content {
+    gap: 0.5rem;
+    padding-bottom: 1rem;
   }
   .popup-form-form {
     flex-direction: column;

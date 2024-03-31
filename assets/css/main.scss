@@ -68,8 +68,6 @@ hr{
     max-height: 30px;
 }
 
-
-
 .Countries{
     position: absolute;
     top: 100%;
@@ -1499,14 +1497,14 @@ hr{
     }
     
     &__title{
-        font-size: clamp(1rem,2vw,2rem);
+        font-size: clamp(.9rem,2vw,2rem);
         font-weight: 600;
         color: #fff;
         text-align: center;
     }
 
     &-text{
-        font-size: 1rem;
+        font-size: clamp(.7rem,1vw,1.1rem);
         font-weight: 600;
         color: #fff;
         text-align: center;
@@ -1681,6 +1679,11 @@ hr{
         width: 80%;
     }
 
+    .popup-form__content{
+        gap: .5rem;
+        padding-bottom: 1rem;
+    }
+
     .popup-form-form{
         flex-direction: column;
         width: 100%;
@@ -1747,16 +1750,6 @@ hr{
         }
     }
 }
-
-// .popup-form{
-
-
-
-
-// }
-
-
-
 
 @media (max-width:1150px) {
     .header__nav,
