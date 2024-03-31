@@ -1267,9 +1267,10 @@ hr{
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
+        object-fit: cover;
     }
     &__user-name{
-        font-size: clamp(1.5rem,2vw,2rem);
+        font-size: clamp(1.5rem,2.5vw,2.5rem);
         color: #999;
         letter-spacing: .2rem;
     }
@@ -1288,10 +1289,9 @@ hr{
     }
 
     &__star{
-        width: clamp(2rem,5vw,5rem);
-        height: clamp(2rem,5vw,5rem);
+        width: clamp(2rem,4vw,4rem);
+        height: clamp(2rem,4vw,4rem);
     }
-
 }
 
 .calculator{
