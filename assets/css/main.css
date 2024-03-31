@@ -135,6 +135,7 @@ hr {
   justify-content: center;
   align-items: center;
   transition: all 1s;
+  padding: 0rem 2rem;
 }
 .loading__title {
   font-family: "Dancing Script", cursive;
