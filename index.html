@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asteila</title>
     <link rel="stylesheet" href="./assets/css/fonts.css">
-    <link rel="stylesheet" href="./assets/css/estilos.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    
 </head>
 <body class="body">
     <div class="messangers__links">
@@ -37,6 +37,32 @@
             <img src="./assets/images/icons/links.png" alt="">
         </button>
     </div>
+    <article class="popup-form">
+            <div class="popup-form__close">
+                <span class="popup-form__close-span"></span>
+            </div>
+            <div class="popup-form__content">
+                <h3 class="popup-form__title">
+                    Бесплатная консультация опытного дизайнера. 
+                    Оперативный выезд, демонстрация примеров решений.
+                </h3>
+                <p class="popup-form-text">Мы предлагаем нашим клиентам: проектирование, ремонт жилой и коммерческой недвижимости, в том числе street retail. Работаем на территории Москвы и ближайшего Подмосковья.</p>
+                <form class="popup-form-form" action="/">
+                    <input class="popup-form__text" type="text" name="name"  placeholder="Имя" required>
+                    <input class="popup-form__text" type="tel" name="telephone" placeholder="Телефон" required>
+                    <input class="popup-form__text" type="email" name="email" placeholder="Почтовый ящик">
+                    <button class="popup-form__btn" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </article>
+    <article class="asides-message">
+        <p class="asides-message-text">
+            Заявка успешно отправлена
+        </p>
+    </article>
     <header class="header">
         <nav class="header__nav">
             <div class="borders">
@@ -66,6 +92,26 @@
                     </ul>
                     <ul class="header__menu-2">
                         <li class="header__item-2">
+                            <div class="language">
+                                <div class="active-lang">
+                                    <img  class="coutry-lang-img language__img" src="./assets/images/icons/ru.png" alt="">
+                                    <img  class="coutry-lang-img language__img" src="./assets/images/icons/en.png" alt="">
+                                    <img  class="coutry-lang-img language__img" src="./assets/images/icons/latvia.png" alt="">
+                                    <img  class="coutry-lang-img language__img" src="./assets/images/icons/lithuania.png" alt="">
+                                </div>
+                                <ul class="Countries">
+                                    <li class="coutry ru" alt="ru" data-google-lang="ru">
+                                    </li>
+                                    <li class="coutry en" alt="en" data-google-lang="en">
+                                    </li>
+                                    <li class="coutry latvia" alt="lv" data-google-lang="lv">
+                                    </li>
+                                    <li class="coutry lithuania" alt="lt" data-google-lang="lt">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__item-2">
                             <img src="./assets/images/icons/clock.svg" alt="clock">
                             <span>Режим работы</span>
                         </li>
@@ -77,8 +123,7 @@
                             <img src="./assets/images/icons/phone.png" alt="phone">
                             <a href="tel:+123">+375259477092</a>
                         </li>
-                        <li class="header__item-2">
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -314,9 +359,9 @@
                     Оперативный выезд, демонстрация примеров решений.
                 </h3>
                 <form class="consultation__form" action="/">
-                    <input class="consultation__form-text" type="text" name="name" id="name" placeholder="Имя">
-                    <input class="consultation__form-text" type="tel" name="tel" id="tel" placeholder="Телефон">
-                    <input class="consultation__form-text" type="text" name="address" id="address" placeholder="Адрес">
+                    <input class="consultation__form-text" type="text" name="name" placeholder="Имя" required>
+                    <input class="consultation__form-text" type="tel" name="telephone" placeholder="Телефон" required>
+                    <input class="consultation__form-text" type="email" name="email" placeholder="Почтовый ящик">
                     <button class="consultation__form-btn" type="submit">
                         Отправить
                     </button>
@@ -659,8 +704,7 @@
                             </label>
                             <span class="calculator__content-range-value">0</span>
                         </div>
-                            <input value="0" min="0" max="500" class="calculator__content-range"  type="range" name="m2" id="m2">
-    
+                            <input value="0" min="0" max="500" class="calculator__content-range" type="range">
                     </div>
                     <div class="pipe-container">
                         <div class="calculator__content-container">
@@ -695,7 +739,7 @@
                             <label for="angles">
                                 <span class="light-container-span">Количество углов, (шт.)</span>
                             </label>
-                            <span  class="calculator__content-angles-value">0</span>
+                            <span class="calculator__content-angles-value">0</span>
                         </div>
                         <div class="calculator__content-btns angles">
                             <button type="button" class="calculator__content-btns-add add-angles">добавить</button>
@@ -713,19 +757,19 @@
                         </p>
                     </div>
                     <div class="calculator__content-form-people-info-container">
-                        <label for="name-2">
+                        <label>
                             <span>Ваше Имя</span>
-                            <input type="text" name="name-2" required
+                            <input type="text" name="name" required
                             placeholder="Введите имя">
                         </label>
-                        <label for="tel-2">
+                        <label>
                             <span>Ваш Телефон</span>
-                            <input type="tel" name="tel-2" required
+                            <input type="tel" name="telephone" required
                             placeholder="+123456789">
                         </label>
-                        <label for="email-2">
+                        <label>
                             <span>Ваша Почта</span>
-                            <input type="email" name="email-2" required
+                            <input type="email" name="email"
                             placeholder="example@mail.com">
                         </label>
                         <button class="calculator__content-form-people-info-container-btn" type="submit">
@@ -734,14 +778,17 @@
                     </div>                              
                 </form>
 
-
-
-
-                
             </div>
         </div>
     </div>
-    
-    <script src="./assets/js/index.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./assets/js/openform.js"></script>
+    <script src="./assets/js/aside.js"></script>
+    <script src="./assets/js/slader.js"></script>
+    <script src="./assets/js/offers.js"></script>
+    <script src="./assets/js/calc.js"></script>
+    <script src="./assets/js/sendmail.js"></script>
+    <script src="./assets/js/messangerslinks.js"></script>
 </body>
 </html>
