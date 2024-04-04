@@ -271,13 +271,25 @@ hr{
     &__nav-container-2{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        // justify-content: space-between;
+        justify-content: space-around;
+
     }
 
-    &__logo{
-        width: 200px;
-        height: 3.1rem;
-        background-color: green;
+    // &__logo{
+    //     // width: 200px;
+    //     // height: 3.1rem;
+    //     // background-color: green;
+    // }
+
+    &__logo-title{
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        color: #fff;
+        font-style: normal;
+        font-size: clamp(2rem,4vw,4rem);
     }
 
     &__menu-3{
@@ -993,15 +1005,15 @@ hr{
             position: relative;
             overflow: hidden;
             font-size: .9rem;
-            height: 3rem;
+            max-height: 2rem;
             color: #303030;
             margin-bottom: .5rem;
             cursor: pointer;
-            transition: all .4s;
+            transition: all 1s;
         }
         &-text.active{
-            height: 10rem;
-            transition: all .4s;
+            max-height: 15rem;
+            transition: all 1s;
         }
 
         &-text::after{
@@ -1424,8 +1436,10 @@ hr{
             font-size: clamp(2rem,3vw,3rem);
             font-weight: 600;
             color: #999;
+            max-width: 2rem;
+
         }
-        
+         
         &__summ-result{
             font-size: 1.5rem;
             color: #fff;
@@ -1484,7 +1498,6 @@ hr{
                 }
             }
         }
-
 
 
     }
@@ -1925,10 +1938,14 @@ hr{
         pointer-events: all;
     }
 
-    .header__logo{
-        width: 150px;
-        height: 75px;
+    .header__nav-container-2{
+        justify-content: space-between;
     }
+
+    // .header__logo{
+    //     width: 150px;
+    //     height: 75px;
+    // }
 
     .messangers__links{
         top: 10%;

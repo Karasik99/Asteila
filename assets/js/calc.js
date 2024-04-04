@@ -15,6 +15,7 @@ let RESULT = document.querySelector('.calculator__content-summ-info-result')
 
 INPUTRANGE.addEventListener('change',GetValueM2)
 INPUTRANGE.addEventListener('mousemove',GetValueM2)
+INPUTRANGE.addEventListener('touchmove',GetValueM2)
 PIPECONTAINER.addEventListener('click',GetValuePipe)
 LIGHTCONTAINER.addEventListener('click',GetValueLight)
 ANGLESCONTAINER.addEventListener('click',GetValueAngles)
