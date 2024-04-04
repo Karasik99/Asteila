@@ -703,7 +703,7 @@ hr {
 .consultation {
   padding: 2rem 0;
   margin-bottom: 3rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/header-bg.jpg");
+  background-image: url("../images/bg-smallblock.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1305,7 +1305,7 @@ hr {
 .messangers__links {
   z-index: 1000;
   position: fixed;
-  top: 50%;
+  top: 30%;
   right: 2%;
   width: 60px;
   display: flex;
@@ -1663,7 +1663,7 @@ hr {
     justify-content: space-between;
   }
   .messangers__links {
-    top: 10%;
+    top: 20%;
   }
 }
 @media (max-width: 768px) {
