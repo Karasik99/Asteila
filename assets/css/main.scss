@@ -130,7 +130,7 @@ hr{
     left: 0;
     width: 100%;
     height: 100dvh;
-    background-color: #396258;
+    background-color: #d6bd7e;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -182,8 +182,6 @@ hr{
 
     }
 }
-
-
 
 .header{
 
@@ -545,18 +543,6 @@ hr{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .aside{
     transform: translateX(-100%);
     transition: all .4s;
@@ -715,24 +701,6 @@ hr{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .advantages{
     width: 100%;
     background-color: #fff;
@@ -745,12 +713,6 @@ hr{
         font-size: 2rem;
         font-weight: 600;
         padding-bottom: 1rem;
-    }
-
-    &__title span{
-        color: #396258;
-        font-size: 2rem;
-        font-weight: 700;
     }
 
     &__content{
@@ -812,6 +774,7 @@ hr{
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
+        width: 100%;
     }
 
     &__card img{
@@ -855,7 +818,7 @@ hr{
         &-btn:hover{
             background-color: transparent;
             transition: all .4s;
-            color: #396258;
+            color: #303030;
             border: 1px solid #d6bd7e;
         }
     }
@@ -869,9 +832,9 @@ hr{
     }
 
     &__slider-wrapper{
-        width: clamp(25rem,50vw,50rem);
+        // width: clamp(25rem,50vw,50rem);
+        width: 100%;
         height: clamp(25rem,40vw,50rem);
-
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -913,7 +876,7 @@ hr{
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid #396258;
+            border: 2px solid #303030;
             border-radius: 50%;
             cursor: pointer;
             transition: all .4s;
@@ -923,7 +886,6 @@ hr{
             transition: all .4s;
             border: 2px solid #d6bd7e;
             border-radius: 25%;
-
         }
 
         &-next{
@@ -949,12 +911,12 @@ hr{
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        border: 2px solid #396258;
+        border: 2px solid #303030;
         cursor: pointer;
     }
 
     &__dot.active{
-        background-color: #396258;
+        background-color: #303030;
 
     }
 }
@@ -1032,12 +994,6 @@ hr{
         font-size: 2rem;
         font-weight: 600;
         padding-bottom: 2rem;
-    }
-
-    &__title span{
-        color: #396258;
-        font-size: 2rem;
-        font-weight: 600;
     }
 
     &__content{
@@ -1120,12 +1076,6 @@ hr{
 
     &__title{
         color: #303030;
-        font-size: 2rem;
-        font-weight: 600;
-    }
-
-    &__title span{
-        color: #396258;
         font-size: 2rem;
         font-weight: 600;
     }
@@ -1253,13 +1203,6 @@ hr{
     margin-bottom: 3rem;
 
     &__title{
-        color: #396258;
-        font-size: 2rem;
-        font-weight: 600;
-        padding-bottom: 2rem;
-    }
-
-    &__title span{
         color: #303030;
         font-size: 2rem;
         font-weight: 600;
@@ -1344,6 +1287,7 @@ hr{
     }
 
     &__statistic{
+        margin-top: 1rem;
         display: flex;
         gap: 1rem;
 
@@ -1359,7 +1303,7 @@ hr{
         }
 
         &-number{
-            color: #396258;
+            color: #303030;
             font-size: 3rem;
             font-weight: 600;
         }
@@ -1384,7 +1328,7 @@ hr{
     width: 100%;
 
     &__title{
-        color: #396258;
+        color: #303030;
         font-size: 2rem;
         font-weight: 600;
     }
@@ -1462,7 +1406,8 @@ hr{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../images/bg-calc.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.9)),url('../images/cacl-bg.jpg');
 
     &__content{
         padding: 4rem 1.5rem;
@@ -1521,7 +1466,7 @@ hr{
             &-people-info-container input{
                 padding: 1rem;
                 border-radius: .7rem;
-                border: 1px solid #999;
+                border: 1px solid #d6bd7e;
                 background-color: transparent;
                 color: #999;
             }
@@ -1529,8 +1474,8 @@ hr{
             &-people-info-container-btn{
                 width: 50%;
                 padding: 1rem;
-                border: none;
-                background-color: #396258;
+                border: 1px solid #d6bd7e;
+                background-color: transparent;
                 border-radius: 1rem;
                 color: #fff;
                 cursor: pointer;
@@ -1540,7 +1485,6 @@ hr{
             &-people-info-container-btn:hover{
                 background-color: #d6bd7e;
                 transition: all .4s;
-
             }
 
         }
@@ -1564,13 +1508,13 @@ hr{
         }
 
         &-range::-webkit-slider-thumb{
-            background-color: #396258;
+            background-color: #d6bd7e;
             appearance: none;
             border-radius: 50%;
             border: .1rem solid black;
             height: .7rem;
             width: .7rem;
-            box-shadow: -1008px 0 0 1000px #396258;
+            box-shadow: -1008px 0 0 1000px #d6bd7e;
         }
 
         label{
@@ -1612,11 +1556,20 @@ hr{
                 color: #fff;
                 border-radius: 1rem;
                 cursor: pointer;
+                transition: all .4s;
             }
 
             &-add{
-                background-color: #396258;
+                background-color: transparent;
+                border: 1px solid #d6bd7e;
             }
+
+            &-add:hover{
+                border: 1px solid #d6bd7e;
+                background-color: #d6bd7e;
+                transition: all .4s;
+            }
+
             &-remove{
                 background-color: #999;
             }
@@ -1644,7 +1597,7 @@ hr{
 
                 &-result{
                     font-size: 1.5rem;
-                    color: #396258;
+                    color: #d6bd7e;
                     font-weight: 400;
                 }
             }
@@ -1659,7 +1612,7 @@ hr{
 .messangers__links{
     z-index: 1000;
     position: fixed;
-    top: 30%;
+    top: 15%;
     right: 2%;
     width: 60px;
     display: flex;
@@ -1869,9 +1822,9 @@ hr{
 .asides-message{
     z-index: 1000;
     position: fixed;
-    top: 90%;
+    top: 88%;
     left: -100%;
-    background-color: #396258;
+    background-color: #d6bd7e;
     height: 70px;
     max-width: 14rem;
     width: 100%;
@@ -2099,7 +2052,7 @@ hr{
     // }
 
     .messangers__links{
-        top: 20%;
+        top: 10%;
     }
 }
 
@@ -2116,6 +2069,9 @@ hr{
             padding: 1rem;
             justify-content: flex-start;
         }
+    }
+    .header{
+        padding-bottom: 2rem;
     }
 }
 
