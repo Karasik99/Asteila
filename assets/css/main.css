@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 ::before,
 ::after {
@@ -235,10 +236,60 @@ hr {
   color: #dfd3b5;
   font-weight: 600;
   font-size: clamp(0.9rem, 1.1vw, 1.2rem);
+  cursor: pointer;
+  transition: all 0.4s;
+  position: relative;
+}
+.header__item-2 span:hover {
+  color: #d6bd7e;
+  transition: all 0.4s;
+  display: block;
+}
+.header__item-2 span:hover::after {
+  position: absolute;
+  left: -10%;
+  top: 140%;
+  content: "c 9:00 до 20:00";
+  width: 130%;
+  height: auto;
+  border-radius: 1rem;
+  color: #d6bd7e;
+  background: #303030;
 }
 .header__item-2 img {
   max-width: 1.9rem;
   max-height: 1.9rem;
+}
+.header__item-2-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.header__item-2-dropbtn {
+  background-color: transparent;
+  color: #dfd3b5;
+  border: none;
+  cursor: pointer;
+}
+.header__item-2-dropdown-content {
+  display: none;
+  position: absolute;
+  left: -40%;
+  background-color: #303030;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.header__item-2-dropdown-content a {
+  color: #dfd3b5;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.header__item-2-dropdown:hover .header__item-2-dropdown-content {
+  display: block;
+}
+.header__item-2-dropdown:hover .header__item-2-dropbtn {
+  color: #d6bd7e;
 }
 .header__nav-2 {
   opacity: 0.9;
@@ -258,6 +309,11 @@ hr {
   color: #fff;
   font-style: normal;
   font-size: clamp(2rem, 4vw, 4rem);
+  transition: all 0.4s;
+}
+.header__logo-title:hover {
+  color: #d6bd7e;
+  transition: all 0.4s;
 }
 .header__menu-3 {
   display: flex;
@@ -348,7 +404,7 @@ hr {
   color: #ffffff;
   font-weight: 600;
   padding-bottom: 1rem;
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-size: clamp(2rem, 4.5vw, 4.5rem);
 }
 .header__info-menu {
   display: flex;
