@@ -81,12 +81,12 @@
                 <div class="header__nav-container">
                     <ul class="header__menu-1">
                         <li class="header__item-1">
-                            <a class="header__link-1" href="/">
+                            <a class="header__link-1" href="#about">
                                 О компании
                             </a>
                         </li>
                         <li class="header__item-1">
-                            <a class="header__link-1" href="/">
+                            <a class="header__link-1" href="#calculator">
                                 Калькулятор
                             </a>
                         </li>
@@ -145,7 +145,7 @@
                                   <a href="tel:+375259477092">+375259477092</a>
                                   <a href="tel:+375259477092">+375259477092</a>
                                 </div>
-                              </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -159,22 +159,31 @@
                     </div>
                     <ul class="header__menu-3">
                         <li class="header__item-3">
-                            <a class="header__link-3" href="/">
-                                Освещение
-                            </a>
+                            <div class="header__item-3-dropdown">
+                                <button class="header__item-3-dropbtn">Освещение</button>
+                                <div class="header__item-3-dropdown-content">
+                                  <a href="/">Магнитная трековая система </a>
+                                  <a href="/">Точечные светильники</a>
+                                  <a href="/">Люстры</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="header__item-3">
-                            <a class="header__link-3" href="/">
-                                Карнизы
-                            </a>
+                            <div class="header__item-3-dropdown">
+                                <button class="header__item-3-dropbtn">Карнизы</button>
+                                <div class="header__item-3-dropdown-content">
+                                  <a href="/">Скрытые карнизы </a>
+                                  <a href="/">Электрокарнизы</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="header__item-3">
-                            <a class="header__link-3" href="/">
+                            <a class="header__link-3" href="#offers">
                                 Акции
                             </a>
                         </li>
                         <li class="header__item-3">
-                            <a class="header__link-3" href="/">
+                            <a class="header__link-3" href="#reviews">
                                 Отзывы
                             </a>
                         </li>
@@ -217,9 +226,32 @@
             </div>
         </div>
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <aside class="aside">
         <div class="aside__content">
-            <div class="aside__logo"></div>
+            <a href="/" class="aside__logo">Asteila</a>
                 <ul class="aside__links">
                     <li>
                         <a href="/" class="aside__link">
@@ -227,7 +259,7 @@
                         </a>
                     <li>
                         <a href="/" class="aside__link">
-                            <img src="./assets/images/icons/case.svg" alt="case">
+                            <img src="./assets/images/icons/facebook.svg" alt="facebook">
                         </a>
                     </li>
                     <li>
@@ -242,16 +274,29 @@
         </div>
         <ul class="aside__menu">
             <li>
-                <a href="/">Освещение</a>
+                <div class="header__item-2-dropdown">
+                    <button class="header__item-2-dropbtn aside-subtitle">Освещение</button>
+                    <div class="header__item-2-dropdown-content aside-content">
+                      <a href="/">Магнитная трековая система</a>
+                      <a href="/">Точечные светильники</a>
+                      <a href="/">Люстры</a>
+                    </div>
+                </div>
             </li>
             <li>
-                <a href="/">Карнизы</a>
+                <div class="header__item-2-dropdown">
+                    <button class="header__item-2-dropbtn aside-subtitle">Карнизы</button>
+                    <div class="header__item-2-dropdown-content aside-content">
+                      <a href="/">Скрытые карнизы</a>
+                      <a href="/">Электрокарнизы</a>
+                    </div>
+                </div>
             </li>
             <li>
-                <a href="/">Акции</a>
+                <a href="#offers">Акции</a>
             </li>
             <li>
-                <a href="/">Отзывы</a>
+                <a href="#reviews">Отзывы</a>
             </li>
             <li>
                 <a href="/">Портфолио</a>
@@ -267,8 +312,40 @@
                 <img src="./assets/images/icons/phone.png" alt="">
                 <a href="tel:+">+375259477092</a>
             </div>
+            <div class="aside__details-2">
+                <img src="./assets/images/icons/phone.png" alt="">
+                <a href="tel:+">+375259477092</a>
+            </div>
+            <div class="aside__details-2">
+                <button class="aside-button">Сделать заказ</button>
+            </div>
         </div>
     </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="borders">
         <section class="advantages">
             <h2 class="advantages__title">
@@ -471,7 +548,7 @@
                 </div>
             </div>
         </section>
-        <section class="offers">
+        <section id="offers" class="offers">
             <h3 class="offers__title">
                 Пакетные 
                 <span>
@@ -675,7 +752,7 @@
                 <div class="C4"></div>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <h3 class="about__title">О компании</h3>
             <div class="about__content">
                 <p>
@@ -710,7 +787,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews">
+        <section id="reviews" class="reviews">
             <h2 class="reviews__title">Отзывы о нас</h2>
             <div class="reviews__cards">
 
@@ -718,7 +795,7 @@
             </div>
         </section>
     </div>
-    <div class="calculator">
+    <div id="calculator" class="calculator">
         <div class="borders">
             <div class="calculator__content">
                 <h3 class="calculator__content-title">
@@ -822,6 +899,7 @@
     <script src="./assets/js/messangerslinks.js"></script>
     <script src="./assets/js/sendmail.js"></script>
     <script src="./assets/js/asyncreviews.js"></script>
+    <script src="./assets/js/scroll.js"></script>
 
 </body>
 </html>

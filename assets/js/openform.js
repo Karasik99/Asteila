@@ -19,9 +19,8 @@ CLOSEBTN.addEventListener('click',((event)=>{
 
 }))
 
-
 function Formcall(event){
-    if((event.target.closest('.header__info-btn-1'))||(event.target.closest('.header__info-btn-2'))||(event.target.closest('.directions__card-btn')) ||(event.target.closest('.offers__card-btn')) || (event.target.closest('.header__btn'))){
+    if((event.target.closest('.header__info-btn-1'))||(event.target.closest('.header__info-btn-2'))||(event.target.closest('.directions__card-btn'))||(event.target.closest('.offers__card-btn')) || (event.target.closest('.header__btn'))||(event.target.closest('.aside-button'))){
         POPUPMENU.classList.add('active')
         BODY.classList.add('activebody')
     }
