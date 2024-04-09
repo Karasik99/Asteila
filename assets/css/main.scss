@@ -9,6 +9,10 @@
     font-weight: 400 ;
 }
 
+.slick-slide {
+    margin: 0 1rem;
+}
+
 
 ul{
     list-style: none;
@@ -130,7 +134,7 @@ hr{
     left: 0;
     width: 100%;
     height: 100dvh;
-    background-color: #d6bd7e;
+    background-color: #999;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -1315,6 +1319,7 @@ hr{
     }
 }
 
+
 .reviews{
     width: 100%;
     padding: 1.5rem;
@@ -1395,6 +1400,7 @@ hr{
 
     &__cards-slader{
         width: 100%;
+        cursor: grab;
     }
 
     &__cards-wrapper{
@@ -1402,17 +1408,20 @@ hr{
         height: inherit;
         display: flex;
         gap: 1rem;
-
+        overflow: hidden;
+        width: inherit;
+        justify-content: center;
     }
 
     &__card{
         width: 100%;
         border-radius: 1rem;
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 2rem;
+        flex-grow: 1;
     }
 
     &__card__content{
@@ -1423,6 +1432,7 @@ hr{
         flex-direction: column;
         gap: 1rem;
         position: relative;
+        margin: 1rem;
     }
 
     &__card__content-stars{
@@ -1485,6 +1495,10 @@ hr{
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+    }
+
+    &__card__user-data-email{
+        font-size: clamp(.8rem,1vw,1rem);
     }
 
     &__cards-slader-btns{
@@ -2103,6 +2117,8 @@ hr{
     }
     .reviews__card{
         gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
     }
     
 }
@@ -2225,6 +2241,14 @@ hr{
 @media (max-width:450px){
     .header__info-btn-2{
         padding: 0.7rem 2rem;
+    }
+
+}
+
+@media (max-width:375px){
+    .reviews__card__user-info{
+        flex-direction: column;
+        align-items: flex-start;
     }
 
 }
