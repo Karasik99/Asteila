@@ -1,6 +1,5 @@
 const BODY = document.querySelector('.body')
 const POPUPMENU = document.querySelector('.popup-form')
-
 const CLOSEBTN = document.querySelector('.popup-form__close')
 
 

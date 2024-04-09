@@ -1,5 +1,31 @@
 
 
+const REVIEWSFORM = document.querySelector('.reviews-form')
+const CLOSEREVIEWSBTN = document.querySelector('.reviews-form__close')
+const REVIEWSFORMBTN = document.querySelector('.reviews__cards-slader-btn')
+
+REVIEWSFORMBTN.addEventListener('click',(event)=>{
+  if(event.target.closest('.reviews__cards-slader-btn')){
+    REVIEWSFORM.classList.add('active')
+    BODY.classList.add('activebody')
+  }
+})
+
+CLOSEREVIEWSBTN.addEventListener('click',((event)=>{
+    if(event.target.closest('.reviews-form__close')|| event.target.closest('.reviews-form__close-span')){
+      REVIEWSFORM.classList.remove('active')
+      BODY.classList.remove('activebody')
+    }
+
+}))
+
+
+
+
+
+
+
+
 
 
 
