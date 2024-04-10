@@ -6,6 +6,27 @@ const REVIEWSCARDSLIDERBTN = document.querySelector('.reviews__cards-slader-btn'
 const REVIEWSFORMBTN = document.querySelector('.reviews-form')
 
 
+const STARSVALUE = document.querySelector('.reviews-form__stars-value')
+let STARSINPUT = document.querySelector('.reviews-form__stars-count')
+
+
+
+STARSINPUT.addEventListener('change',GetStarsCount)
+STARSINPUT.addEventListener('mousemove',GetStarsCount)
+STARSINPUT.addEventListener('touchmove',GetStarsCount)
+
+function GetStarsCount(event){
+  STARSVALUE.innerHTML = `Кол-во звезд: ${event.target.value}`
+}
+
+
+
+
+
+
+
+
+
 REVIEWSCARDSLIDERBTN.addEventListener('click',(event)=>{
   if(event.target.closest('.reviews__cards-slader-btn')){
     REVIEWSFORM.classList.add('active')

@@ -91,6 +91,10 @@
                     <input class="reviews-form__text" type="tel" name="telephone" placeholder="Телефон" required>
                     <input class="reviews-form__text" type="text" name="city" placeholder="Ваш город" required>
                     <input class="reviews-form__text" type="email" name="email" placeholder="Почтовый ящик">
+                    <label class="reviews-form__stars" for="stars">
+                        <span class="reviews-form__stars-value">Кол-во звезд: 3</span>
+                        <input class="reviews-form__stars-count" value="3" min="1" max="5" type="range" name="stars">
+                    </label>
                 </div>
                 <textarea placeholder="Введите текст..." class="reviews-form-form-text-review" name="review"></textarea>
                 <button class="reviews-form__btn" type="submit">
