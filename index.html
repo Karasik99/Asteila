@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fjalla+One&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -88,15 +90,14 @@
             <form class="reviews-form-form" action="/">
                 <div class="reviews-form-form-container">
                     <input class="reviews-form__text" type="text" name="name"  placeholder="Имя" required>
-                    <input class="reviews-form__text" type="tel" name="telephone" placeholder="Телефон" required>
-                    <input class="reviews-form__text" type="text" name="city" placeholder="Ваш город" required>
-                    <input class="reviews-form__text" type="email" name="email" placeholder="Почтовый ящик">
+                    <input class="reviews-form__text" type="text" name="city" placeholder="Ваш город" >
+                    <input class="reviews-form__text" type="email" name="email" placeholder="Почтовый ящик" required>
                     <label class="reviews-form__stars" for="stars">
                         <span class="reviews-form__stars-value">Кол-во звезд: 3</span>
                         <input class="reviews-form__stars-count" value="3" min="1" max="5" type="range" name="stars">
                     </label>
                 </div>
-                <textarea placeholder="Введите текст..." class="reviews-form-form-text-review" name="review"></textarea>
+                <textarea required wrap="hard" placeholder="Введите текст..." class="reviews-form-form-text-review" name="review"></textarea>
                 <button class="reviews-form__btn" type="submit">
                     Отправить
                 </button>
@@ -784,7 +785,7 @@
             <h2 class="reviews__title">Что говорят о нас</h2>
             <div class="reviews__content">
                 <div class="reviews__videos">
-                    <video class="reviews__videos-active" autoplay loop muted controls>
+                    <video preload="none" class="reviews__videos-active" autoplay loop muted controls>
                         <source src="./assets/video/1.mp4" type="video/mp4">
                     </video>
                     <ul class="reviews__videos-navigation">
@@ -796,99 +797,6 @@
                 </div>
                 <div class="reviews__cards-slader">
                     <div class="reviews__cards-wrapper">
-
-                        <div class="reviews__card">
-                            <div class="reviews__card__content">
-                                <div class="reviews__card__content-stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-
-                                </div>
-                                <p class="reviews__card__content-text">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum soluta natus, deserunt illum tempore harum at nulla eos, modi, pariatur eaque dolore! Fuga omnis accusantium iure molestias laborum cupiditate nobis.
-                                </p>
-                            </div>
-                            <div class="reviews__card__user">
-                                <div class="reviews__card__user-info">
-                                    <img src="./assets/images/icons/user.png" alt="фото">
-                                    <div class="reviews__card__user-data">
-                                        <p class="reviews__card__user-data-name">Никита</p>
-                                        <p class="reviews__card__user-data-city">Минск</p>
-                                        <p class="reviews__card__user-data-email">nikita.carasevicrh.neilko8@list.ru</p>
-                                    </div>
-                                </div>
-                                <div class="reviews__card__date">
-                                    <p>21.08.2021</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reviews__card">
-                            <div class="reviews__card__content">
-                                <div class="reviews__card__content-stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-
-                                </div>
-                                <p class="reviews__card__content-text">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum soluta natus, deserunt illum tempore harum at nulla eos, modi, pariatur eaque dolore! Fuga omnis accusantium iure molestias laborum cupiditate nobis.
-                                </p>
-                            </div>
-                            <div class="reviews__card__user">
-                                <div class="reviews__card__user-info">
-                                    <img src="./assets/images/icons/user.png" alt="фото">
-                                    <div class="reviews__card__user-data">
-                                        <p class="reviews__card__user-data-name">Никита</p>
-                                        <p class="reviews__card__user-data-city">Минск</p>
-                                        <p class="reviews__card__user-data-email">nikitaneilko8@list.ru</p>
-                                    </div>
-                                </div>
-                                <div class="reviews__card__date">
-                                    <p>21.08.2021</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reviews__card">
-                            <div class="reviews__card__content">
-                                <div class="reviews__card__content-stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-                                    <img src="./assets/images/icons/star.png" alt="stars">
-
-                                </div>
-                                <p class="reviews__card__content-text">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum soluta natus, deserunt illum tempore harum at nulla eos, modi, pariatur eaque dolore! Fuga omnis accusantium iure molestias laborum cupiditate nobis.
-                                </p>
-                            </div>
-                            <div class="reviews__card__user">
-                                <div class="reviews__card__user-info">
-                                    <img src="./assets/images/icons/user.png" alt="фото">
-                                    <div class="reviews__card__user-data">
-                                        <p class="reviews__card__user-data-name">Никита</p>
-                                        <p class="reviews__card__user-data-city">Минск</p>
-                                        <p class="reviews__card__user-data-email">nikitaneilko8@list.ru</p>
-                                    </div>
-                                </div>
-                                <div class="reviews__card__date">
-                                    <p>21.08.2021</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
                     </div>
                 </div>
                 <div class="reviews__cards-slader-btns">
