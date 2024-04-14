@@ -2016,6 +2016,46 @@ hr {
     left: 100%;
   }
 }
+.track__header {
+  padding: 0;
+}
+
+.track__nav-container {
+  justify-content: space-around;
+}
+
+.track__menu {
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.track__details {
+  gap: 1.5rem;
+}
+
+.catalog {
+  background-color: #303030;
+  width: 100%;
+  overflow: hidden;
+}
+.catalog__cards {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.catalog__card {
+  width: 100%;
+}
+.catalog__card-img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
 @media (max-width: 1200px) {
   .consultation__content {
     flex-direction: column;
@@ -2204,6 +2244,9 @@ hr {
   }
   .header {
     padding-bottom: 2rem;
+  }
+  .track__header {
+    padding: 0;
   }
   .reviews-form {
     padding: 1rem;
