@@ -65,6 +65,7 @@ function SendReviews(event){
     stars:obj.stars
   };
   
+  sendReviewTelegram()
   fetch('https://660996190f324a9a28837e41.mockapi.io/Comments', {
   method: 'POST',
   headers: {'content-type':'application/json'},
@@ -125,11 +126,6 @@ async function GetReviews(){
 }
 
 
-
-
-
-
-
 function videoUrl(url) {
     document.querySelector(".reviews__videos-active").src = url;
 }
@@ -150,4 +146,15 @@ async function Slider(){
         }
       }]
   });
+}
+
+
+async function sendReviewTelegram(){
+  const token =  "6536032829:AAGJt84Fx5iABijzDdj9YoF7kYsICDFp0AU"
+  const chat_id = '-1002115025266'
+  let text = `На сайте Asteila,размещен отзыв https://github.com/Karasik99/Asteila`
+  const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${text}/` 
+  let api = new XMLHttpRequest();
+  api.open("GET",url,'true');
+  api.send()
 }

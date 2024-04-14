@@ -99,7 +99,7 @@ hr {
   position: absolute;
   top: 100%;
   z-index: 1000;
-  left: 0;
+  left: -15%;
   width: inherit;
   opacity: 0;
   pointer-events: none;
@@ -110,6 +110,10 @@ hr {
   margin: 0;
   padding: 0;
   gap: 1rem;
+}
+
+.mobile-countries {
+  left: 0;
 }
 
 .Countries.active {
@@ -578,8 +582,8 @@ hr {
 .aside__menu {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding-bottom: 2rem;
+  gap: 1rem;
+  padding-bottom: 1rem;
 }
 .aside__menu a {
   color: #dfd3b5;
