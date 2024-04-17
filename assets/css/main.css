@@ -1558,7 +1558,7 @@ hr {
 .messangers__links {
   z-index: 1000;
   position: fixed;
-  top: 15%;
+  bottom: 5%;
   right: 2%;
   width: 60px;
   display: flex;
@@ -1587,12 +1587,15 @@ hr {
 @keyframes Skale {
   0% {
     transform: scale(1);
+    opacity: 1;
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    opacity: 0.5;
   }
   100% {
     transform: scale(1);
+    opacity: 1;
   }
 }
 .messangers__links-menu {
@@ -1611,6 +1614,15 @@ hr {
   opacity: 1;
   transition: all 0.4s;
   pointer-events: all;
+}
+.messangers__links-item {
+  cursor: pointer;
+  transition: all 0.4s;
+  opacity: 0.5;
+}
+.messangers__links-item:hover {
+  transition: all 0.4s;
+  opacity: 1;
 }
 .messangers__links-link {
   width: 60px;
@@ -1905,67 +1917,114 @@ hr {
 
 .footer {
   width: 100%;
+  padding: 2rem 1.5rem 2rem;
   background-color: #303030;
-  padding: 4rem 1.5rem;
 }
 .footer__menu {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 1rem;
-}
-.footer__container {
-  justify-content: space-between;
-}
-.footer__hr {
+  background-color: #363535;
+  border-radius: 1rem;
   width: 100%;
-  height: 2px;
-  background-color: #d6bd7e;
-  margin-bottom: 2rem;
+  height: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
 }
 .footer__info {
   display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-.footer__info p {
-  font-size: 1.2rem;
-  color: #f1f1f1;
+.footer__hr {
+  width: 2px;
+  height: 12rem !important;
+  background-color: #817f7f;
 }
-.footer__menu-3 {
-  display: flex;
-  gap: 1.5rem;
-}
-.footer__nav-container-2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.footer__nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.footer__btn {
-  border: 0.1rem solid #dfd3b5;
-  color: #303030;
-  border-radius: 0.6rem;
-  font-size: clamp(0.9rem, 1.1vw, 1.2rem);
-  font-weight: 600;
-  background-color: #dfd3b5;
-  padding: 0.7rem 2rem;
+.footer__logo {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: #fff;
+  font-style: normal;
+  font-size: clamp(2rem, 3.5vw, 4rem);
   transition: all 0.4s;
-  cursor: pointer;
+}
+.footer__logo:hover {
+  color: #d6bd7e;
+  transition: all 0.4s;
 }
 .footer__menu-2 {
   display: flex;
   gap: 1rem;
-}
-.footer__menu-1 {
-  display: flex;
-  gap: 1rem;
+  justify-content: center;
   align-items: center;
+}
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer__item p {
+  color: #dfd3b5;
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+}
+.footer__menu-2__item-dropdown, .footer__item-2-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.footer__menu-3__item-images img, .footer__item-2 img {
+  width: 30px;
+  height: 30px;
+}
+.footer__menu-2__item-dropbtn, .footer__item-2-dropbtn, .footer__menu-2__item a {
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+  background-color: transparent;
+  border: none;
+  color: #dfd3b5;
+  cursor: pointer;
+}
+.footer__menu-2__item a:hover {
+  color: #d6bd7e;
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+}
+.footer__item-2-dropdown-content a:hover {
+  color: #d6bd7e;
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+}
+.footer__menu-2__item-dropdown-content, .footer__item-2-dropdown-content {
+  display: none;
+  position: absolute;
+  left: -25%;
+  top: 100%;
+  background-color: #303030;
+  width: max-content;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+.footer__menu-2__item-dropdown-content a, .footer__item-2-dropdown-content a {
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+  color: #dfd3b5;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.footer__menu-2__item-dropdown:hover .footer__menu-2__item-dropdown-content, .footer__item-2-dropdown:hover .footer__item-2-dropdown-content {
+  display: block;
+  background-color: #303030;
+  color: #d6bd7e;
+  z-index: 1000;
+  opacity: 1;
+}
+.footer__menu-2__item-dropdown:hover .footer__menu-2__item-dropbtn {
+  color: #d6bd7e;
+}
+.footer__item-2-dropdown:hover .footer__item-2-dropbtn {
+  color: #d6bd7e;
 }
 
 .reviews-form.active {
@@ -2068,6 +2127,24 @@ hr {
   }
   .reviews-form-form-container input {
     width: 100%;
+  }
+  .footer__menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer__hr {
+    height: 2px !important;
+    width: 100%;
+  }
+  .footer__menu-3__item-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .footer__menu-2__item-dropdown-content, .footer__item-2-dropdown-content {
+    top: -100%;
+    left: 100%;
   }
 }
 @media (max-width: 1023px) {
@@ -2201,32 +2278,9 @@ hr {
   .header__nav-container-2 {
     justify-content: space-between;
   }
-  .messangers__links {
-    top: 10%;
-  }
 }
 @media (max-width: 945px) {
-  .footer__nav-container {
-    gap: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1rem;
-  }
-  .footer__nav-container-2 {
-    flex-direction: column-reverse;
-    gap: 1rem;
-    align-items: flex-start;
-    padding-bottom: 1rem;
-  }
   .reviews__card__user-info {
-    align-items: flex-start;
-  }
-  .footer__menu-2 {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .footer__menu-1 {
-    flex-direction: column;
     align-items: flex-start;
   }
 }
@@ -2275,6 +2329,11 @@ hr {
   .reviews-form__stars {
     padding: 0.5rem;
   }
+  .messangers__links-btn,
+  .messangers__links-link {
+    width: 50px;
+    height: 50px;
+  }
 }
 @media (max-width: 550px) {
   .reviews__card__user {
@@ -2282,6 +2341,16 @@ hr {
     width: 100%;
     gap: 0.7rem;
     align-items: flex-start;
+  }
+  .footer__item-2-dropdown-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .footer__menu-2__item-dropdown-content {
+    left: -10%;
+    top: 100%;
   }
 }
 @media (max-width: 500px) {
