@@ -2459,17 +2459,82 @@ hr{
 }
 
 
-
-
-
-
-
-
-
 // /////////////////////////////////////////////////////////////////////////////////////////
 
 
 
+// /////////////////Portfolio////////////////////////////////////////
+
+
+.slick-dots{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.portfolio{
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    overflow: hidden;
+    background-color: #303030;
+    cursor: grab;
+    
+    
+    &__wrapper{
+        border-radius: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &__cards-active{
+        width: 100%;
+    }
+
+
+    &__cards-active img{
+        object-fit: cover;
+        width: inherit;
+        height: inherit;
+        border-radius: 1rem;
+    }
+
+    &__cards{
+        width: inherit;
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__cards-active img{
+        width: 100% !important;
+        border-radius: 1rem;
+        object-fit: cover;
+        height: clamp(10rem,25vw,25rem) !important;
+    }
+
+    
+
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////
 
 
 
@@ -2542,7 +2607,7 @@ hr{
         &__menu-3__item-images{
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             gap: .5rem;
         }
 
@@ -2803,10 +2868,9 @@ hr{
     }
 
     .footer__item-2-dropdown-content{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        position: absolute;
+        left: 0%;
+        top: -350%;
     }
 
     .footer__menu-2__item-dropdown-content{
@@ -2867,6 +2931,10 @@ hr{
         rgba(0, 0, 0, 0.9)),url('../images/header-bg-2.png');
         background-repeat: no-repeat;
         background-position: center center;
+    }
+
+    .footer__menu{
+        align-items: flex-start;
     }
 }
 
