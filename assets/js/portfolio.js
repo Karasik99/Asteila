@@ -11,7 +11,7 @@
     nextArrow:false,
     autoplay:5000,
     speed: 1000,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
       {

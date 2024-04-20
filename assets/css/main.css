@@ -497,6 +497,9 @@ hr {
   background-color: transparent;
   padding: 0.7rem 3rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header__info-btn-2:hover {
   transition: all 0.4s;
@@ -2140,6 +2143,7 @@ hr {
 }
 .portfolio__cards-active {
   width: 100%;
+  height: auto;
 }
 .portfolio__cards-active img {
   object-fit: cover;
@@ -2152,11 +2156,85 @@ hr {
   display: flex;
   gap: 1rem;
 }
+.portfolio__card {
+  position: relative;
+}
+.portfolio__card-btn {
+  padding: 1rem 2.5rem;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  transition: all 0.4s;
+}
+.portfolio__card-btn:hover {
+  transition: all 0.4s;
+  color: #303030;
+  background-color: #fff;
+}
 .portfolio__cards-active img {
   width: 100% !important;
   border-radius: 1rem;
   object-fit: cover;
-  height: clamp(10rem, 25vw, 25rem) !important;
+  height: clamp(20rem, 35vw, 35rem) !important;
+  opacity: 0.7;
+}
+
+.cornices {
+  background-color: #303030;
+}
+.cornices__contents {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.cornices__content {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #999;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.cornices__content-img {
+  width: 100%;
+  height: clamp(20rem, 40vw, 40rem);
+  border-radius: 1rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cornices__content-photo-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/lamps/3.jpg");
+}
+.cornices__content-photo-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/lamps/2.jpg");
+}
+.cornices__content-photo-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/lamps/1.jpg");
+}
+.cornices__content-photo-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/lamps/4.jpg");
+}
+.cornices__content-text {
+  position: absolute;
+  bottom: -5%;
+  padding: 1rem;
+  color: #f1f1f1;
+  background-color: #999;
+  border-radius: 1rem;
+  width: 95%;
+  font-size: clamp(0.7rem, 1.2vw, 1.2rem);
 }
 
 @media (max-width: 1200px) {
@@ -2442,6 +2520,9 @@ hr {
   }
   .footer__menu {
     align-items: flex-start;
+  }
+  .cornices__content-text {
+    bottom: -8%;
   }
 }
 @media (max-width: 450px) {
