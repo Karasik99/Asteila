@@ -99,7 +99,7 @@ function GetValueAngles(event){
 }
 
 function Result(){
-    let result = (RANGEVALUE.innerHTML*16)+(PIPEVALUE.innerHTML*8)+(LIGHTVALUE.innerHTML*8)+(ANGLESVALUE.innerHTML*2)
+    let result = (RANGEVALUE.innerHTML*14)+(PIPEVALUE.innerHTML*8)+(LIGHTVALUE.innerHTML*8)+(ANGLESVALUE.innerHTML*2)
     RESULT.innerHTML = result
 }
 

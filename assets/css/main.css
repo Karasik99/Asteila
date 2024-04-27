@@ -348,11 +348,9 @@ hr {
 }
 .header__logo-title {
   text-align: center;
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
   color: #fff;
   font-style: normal;
+  font-weight: 600;
   font-size: clamp(2rem, 3.5vw, 4rem);
   transition: all 0.4s;
 }
@@ -449,7 +447,7 @@ hr {
   color: #ffffff;
   font-weight: 600;
   padding-bottom: 1rem;
-  font-size: clamp(2rem, 4.5vw, 4.5rem);
+  font-size: clamp(2rem, 3vw, 3.5rem);
 }
 .header__info-menu {
   display: flex;
@@ -2215,16 +2213,16 @@ hr {
   background-size: cover;
 }
 .cornices__content-photo-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/lamps/3.jpg");
+  background-image: url("../images/lamps/3.jpg");
 }
 .cornices__content-photo-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/lamps/2.jpg");
+  background-image: url("../images/lamps/2.jpg");
 }
 .cornices__content-photo-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/lamps/1.jpg");
+  background-image: url("../images/lamps/1.jpg");
 }
 .cornices__content-photo-4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/lamps/4.jpg");
+  background-image: url("../images/lamps/4.jpg");
 }
 .cornices__content-text {
   position: absolute;

@@ -400,12 +400,13 @@ hr{
         // font-optical-sizing: auto;
         // font-weight: 500;
 
-        font-family: "Cinzel", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
+        // font-family: "Cinzel", serif;
+        // font-optical-sizing: auto;
+        // font-weight: 400;
 
         color: #fff;
         font-style: normal;
+        font-weight: 600;
         font-size: clamp(2rem,3.5vw,4rem);
         transition: all .4s;
     }
@@ -516,7 +517,7 @@ hr{
         color: #ffffff;
         font-weight: 600;
         padding-bottom: 1rem;
-        font-size: clamp(2rem,4.5vw,4.5rem) ;
+        font-size: clamp(2rem,3vw,3.5rem) ;
     }
     
     &__info-menu{
@@ -2591,20 +2592,16 @@ hr{
     }
 
     &__content-photo-1{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.9)),url('../images/lamps/3.jpg');
+        background-image: url('../images/lamps/3.jpg');
     }
     &__content-photo-2{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.9)),url('../images/lamps/2.jpg');
+        background-image: url('../images/lamps/2.jpg');
     }
     &__content-photo-3{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.9)),url('../images/lamps/1.jpg');
+        background-image: url('../images/lamps/1.jpg');
     }
     &__content-photo-4{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.9)),url('../images/lamps/4.jpg');
+        background-image: url('../images/lamps/4.jpg');
     }
 
     &__content-text{
