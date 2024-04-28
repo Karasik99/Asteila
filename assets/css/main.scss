@@ -1523,7 +1523,7 @@ hr{
         background-color: #303030;  
         border-radius: 1rem;       
         border: 2px solid #303030;  
-      }
+    }
     
     &__card__content{
         padding: 1.5rem;
@@ -1932,7 +1932,6 @@ hr{
         display: flex;
         justify-content: center;
         align-items: center;
-        pointer-events: none;
     }
     
     &-link img{
@@ -2467,11 +2466,11 @@ hr{
 
 .track__menu{
     gap: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .track__details{
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .catalog{
@@ -2594,7 +2593,7 @@ hr{
 
 
 
-///////////////////////////////LAmps/////////////////
+///////////////////////////////Cornises/////////////////
 
 
 .cornices{
@@ -2644,16 +2643,48 @@ hr{
     }
 
     &__content-text{
-        position: absolute;
-        bottom: -5%;
-        padding: 1rem;
+        overflow-y: scroll;
+        padding: .2rem;
         color: #f1f1f1;
         background-color: #999;
         border-radius: 1rem;
         width: 95%;
+        height: 5rem;
+        cursor: grab;
         font-size: clamp(.7rem, 1.2vw, 1.2rem);
     }
+
+    &__content-text::-webkit-scrollbar {
+        width: .5rem;         
+      }
+    
+    &__content-text::-webkit-scrollbar-track {
+        background: #999;       
+    }
+
+    &__content-text::-webkit-scrollbar-thumb {
+        background-color: #303030;  
+        border-radius: 1rem;       
+        border: 2px solid #303030;  
+    }
 }
+
+
+.hiddencornises__cards{
+    width: 100%;
+}
+
+.hiddencornises__card{
+    width: 100%;
+}
+
+.hiddencornises__card img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
 
 
 
@@ -3050,10 +3081,6 @@ hr{
 
     .footer__menu{
         align-items: flex-start;
-    }
-
-    .cornices__content-text{
-        bottom: -8%;
     }
 }
 
