@@ -169,15 +169,11 @@ hr {
   padding: 0rem 2rem;
 }
 .loading__title {
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: clamp(4rem, 7vw, 7rem);
   animation: hey 5s infinite forwards linear;
 }
 .loading__text {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: clamp(1.5rem, 5vw, 5rem);
@@ -533,9 +529,7 @@ hr {
 }
 .aside__logo {
   text-align: center;
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   color: #dfd3b5;
   font-style: normal;
   font-size: clamp(2rem, 4vw, 4rem);
@@ -801,7 +795,7 @@ hr {
 .directions__slider-line img {
   width: inherit;
   height: inherit;
-  object-fit: cover;
+  object-fit: inherit;
 }
 .directions__buttons {
   margin-top: 0.7rem;
@@ -1307,15 +1301,15 @@ hr {
   height: 10rem;
 }
 .reviews__card__content-text::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.5rem !important;
 }
 .reviews__card__content-text::-webkit-scrollbar-track {
-  background: #999;
+  background: #999 !important;
 }
 .reviews__card__content-text::-webkit-scrollbar-thumb {
-  background-color: #303030;
-  border-radius: 1rem;
-  border: 2px solid #303030;
+  background-color: #303030 !important;
+  border-radius: 1rem !important;
+  border: 2px solid #303030 !important;
 }
 .reviews__card__content {
   padding: 1.5rem;
@@ -1978,9 +1972,7 @@ hr {
 }
 .footer__logo {
   text-align: center;
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   color: #fff;
   font-style: normal;
   font-size: clamp(2rem, 3.5vw, 4rem);
@@ -2411,6 +2403,34 @@ hr {
   .jobswithus__title {
     padding-left: 1rem;
   }
+  .directions__card {
+    height: clamp(14rem, 20vw, 25rem);
+  }
+  .minigallery .C1 {
+    background-image: url("../images/newgallery-4.jpg");
+  }
+  .reviews__card__user {
+    margin-bottom: 3.5rem;
+  }
+  .slick-prev {
+    left: 0;
+    top: 94%;
+    z-index: 10000;
+  }
+  .slick-next {
+    right: 1.2rem;
+    top: 94%;
+    z-index: 10000;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-family: "slick";
+    font-size: 2.5rem;
+    line-height: 1;
+    opacity: 0.75;
+    color: #999;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 @media (max-width: 700px) {
   .about__statistic {
@@ -2587,5 +2607,8 @@ hr {
   .reviews__card__user-info {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .reviews__card__content-stars {
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */

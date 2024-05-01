@@ -134,6 +134,7 @@ async function Slider(){
   $('.reviews__cards-wrapper').slick({
     infinite: true,
     dots:false,
+    arrows: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
