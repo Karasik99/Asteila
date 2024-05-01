@@ -10,6 +10,10 @@
   font-weight: 400;
 }
 
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
 .slick-slide {
   margin: 0 1rem;
 }
