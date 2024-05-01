@@ -1,4 +1,4 @@
-const oGallery = document.querySelector('.hey');
+const oGallery = document.querySelector('.portfolio');
 oGallery.addEventListener('click', function(ev) {
   if (ev.target.tagName != 'IMG') { return false; };
   let oTarget = ev.target, nWidth, nHeight, nRatio = oTarget.offsetWidth / oTarget.offsetHeight;
@@ -25,6 +25,9 @@ oGallery.addEventListener('click', function(ev) {
   oBig.style.width = `${85}%`; oBig.style.height = `${50}%`;
   oBig.style.maxWidth = `${400}px`
   oBig.style.maxHeight = `clamp(${10}rem,${20}rem,${23}rem)`;
+  oBig.style.zIndex = `1000`;
+
+   
 
   oBig.style.top = oBig.style.left = `50%`;
   oBig.style.transform = `translate(-50%, -50%) rotate(1turn)`;

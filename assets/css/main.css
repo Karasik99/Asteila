@@ -518,6 +518,8 @@ hr {
 .aside.active {
   transform: translateX(0%);
   transition: all 0.4s;
+  pointer-events: all;
+  z-index: 1000;
 }
 .aside__content {
   display: flex;
@@ -848,6 +850,9 @@ hr {
 }
 .directions__dot.active {
   background-color: #303030;
+  box-shadow: none;
+  backdrop-filter: none;
+  filter: none;
 }
 
 .consultation {
@@ -957,7 +962,7 @@ hr {
 }
 .jobswithus__card-text {
   color: #949090;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1vw, 1.1rem);
 }
 .jobswithus__gallery {
   height: inherit;
@@ -2109,6 +2114,24 @@ hr {
   padding: 0;
 }
 
+.track__title {
+  padding-bottom: 3rem;
+}
+
+.track__info-text {
+  padding-bottom: 3rem;
+  font-size: clamp(0.7rem, 1.1vw, 1.2rem);
+}
+
+.track__info {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/track-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-blend-mode: exclusion;
+  padding-bottom: 6rem;
+}
+
 .track__nav-container {
   justify-content: space-around;
 }
@@ -2145,86 +2168,32 @@ hr {
   object-fit: cover;
 }
 
-.portfolio {
-  width: 100%;
-  padding: 1.5rem;
-  overflow: hidden;
-  background-color: #303030;
+.lamps__info {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/Lights-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-.portfolio__cards {
-  border-radius: 1rem;
+
+.portfolio {
+  position: relative;
+  padding: 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  width: 100%;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.portfolio__card {
-  width: 32%;
-  height: 400px;
-  cursor: pointer;
-  position: relative;
-  transform: scale(1);
-}
-.portfolio__card__conteiner {
-  display: none;
-  position: absolute;
-  top: 1%;
-  right: 1%;
-  width: 2rem;
-  height: 2rem;
-}
-.portfolio__card__conteiner.active {
-  display: block;
-}
-.portfolio__card__conteiner::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  background-color: #fff;
-  width: 100%;
-  height: 3px;
-}
-.portfolio__card__conteiner::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  background-color: #fff;
-  width: 100%;
-  height: 3px;
-}
-.portfolio__card img {
-  border-radius: 1rem;
-  width: 100%;
-  height: 100%;
-}
-.portfolio__card.active img {
-  transform: scale(2);
-}
-
-.hey {
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-  width: 90%;
-  margin: 0 auto;
-  background-color: #fff;
-}
-
-.hey img {
   height: auto;
-  width: 200px;
-  margin: 10px;
-  box-shadow: 0 0 0 5px #fff, 0 0 0 6px #919191;
+  width: 100%;
+  gap: 1rem;
+  background-color: #303030;
+}
+
+.portfolio img {
+  border-radius: 1rem;
+  width: 32%;
+  max-height: clamp(6rem, 28vw, 16rem);
+  object-fit: inherit;
+  box-shadow: 0 0 0 5px #303030, 0 0 0 6px #919191;
   transition: 0.5s linear;
   cursor: pointer;
 }
@@ -2488,6 +2457,12 @@ hr {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  .portfolio {
+    justify-content: center;
+  }
+  .portfolio img {
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .about__statistic {
@@ -2526,6 +2501,14 @@ hr {
   }
   .header__nav-container-2 {
     justify-content: space-between;
+  }
+}
+@media (max-width: 1024px) {
+  .portfolio {
+    justify-content: center;
+  }
+  .portfolio img {
+    width: 47%;
   }
 }
 @media (max-width: 945px) {
@@ -2652,6 +2635,25 @@ hr {
   }
   .footer__menu {
     align-items: flex-start;
+  }
+  .track__info {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../images/track-bg-small.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-bottom: 6rem;
+    background-blend-mode: inherit;
+  }
+  .lamps__info {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/Lights-bg-small.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .track__title,
+  .track__info-btns,
+  .track__info-text {
+    padding-bottom: 0.5rem;
   }
 }
 @media (max-width: 450px) {
