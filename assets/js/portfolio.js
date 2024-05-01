@@ -21,7 +21,7 @@ oGallery.addEventListener('click', function(ev) {
     this.style.height = this.style.width = `0px`;
   oGallery.classList.toggle('show', false);
   });
-  oBig.classList.toggle('active');
+  oBig.classList.toggle('actives');
   oBig.style.width = `${85}%`; oBig.style.height = `${50}%`;
   oBig.style.maxWidth = `${400}px`
   oBig.style.maxHeight = `clamp(${10}rem,${20}rem,${23}rem)`;

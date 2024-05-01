@@ -2128,7 +2128,6 @@ hr {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background-blend-mode: exclusion;
   padding-bottom: 6rem;
 }
 
@@ -2169,7 +2168,7 @@ hr {
 }
 
 .lamps__info {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/Lights-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/lights-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2203,7 +2202,7 @@ hr {
   pointer-events: none;
 }
 
-.active {
+.actives {
   transition: box-shadow 0.5s linear 0.5s, top 1s ease-out, left 1s ease-out, transform 1s ease-out, width 1s ease-in, height 1s ease-in;
   box-shadow: 0 0 0 10px #fff;
   filter: drop-shadow(1px 2px 6px #000);
@@ -2253,6 +2252,14 @@ hr {
   position: relative;
   justify-content: center;
   align-items: center;
+}
+.cornices__info {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/cornices-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 6rem;
+  background-blend-mode: exclusion;
 }
 .cornices__content-img {
   width: 100%;
@@ -2639,13 +2646,12 @@ hr {
   .track__info {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../images/track-bg-small.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: right;
     background-size: cover;
-    padding-bottom: 6rem;
-    background-blend-mode: inherit;
+    padding-bottom: 1rem !important;
   }
   .lamps__info {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/Lights-bg-small.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/lights-bg-small.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -2654,6 +2660,14 @@ hr {
   .track__info-btns,
   .track__info-text {
     padding-bottom: 0.5rem;
+  }
+  .cornices__info {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/cornices-bg-small.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 1rem !important;
+    background-blend-mode: inherit;
   }
 }
 @media (max-width: 450px) {
