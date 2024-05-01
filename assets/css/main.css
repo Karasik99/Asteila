@@ -738,6 +738,18 @@ hr {
   font-size: 0.9rem;
   overflow-y: scroll;
 }
+.directions__card-text::-webkit-scrollbar {
+  width: 0.5rem;
+  -webkit-appearance: none;
+}
+.directions__card-text::-webkit-scrollbar-track {
+  background: #999;
+}
+.directions__card-text::-webkit-scrollbar-thumb {
+  background-color: #303030;
+  border-radius: 1rem;
+  border: 2px solid #303030;
+}
 .directions__card-btn {
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -2573,6 +2585,11 @@ hr {
   }
   .header__item-1:nth-child(2) {
     padding: 0;
+  }
+  .directions__card-text,
+  .reviews__card__content-text {
+    scrollbar-width: thin;
+    scrollbar-color: #838383 black;
   }
 }
 @media (max-width: 425px) {
