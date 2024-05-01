@@ -65,9 +65,9 @@
 
                 </p>
                 <form class="popup-form-form" action="/">
-                    <input class="popup-form__text" type="text" name="name"  placeholder="Имя" required>
-                    <input class="popup-form__text" type="tel" name="telephone" placeholder="Телефон" required>
-                    <input class="popup-form__text" type="email" name="email" placeholder="Почтовый ящик">
+                    <input class="popup-form__text" type="text" name="name" autocomplete="on"  placeholder="Имя" required>
+                    <input class="popup-form__text" type="tel" name="telephone" autocomplete="on" placeholder="Телефон" required>
+                    <input class="popup-form__text" type="email" name="email" autocomplete="on" placeholder="Почтовый ящик">
                     <button class="popup-form__btn" type="submit">
                         Отправить
                     </button>
@@ -86,9 +86,9 @@
             <p class="reviews-form-text">Ваше мнение всегда важно для нас</p>
             <form class="reviews-form-form" action="/">
                 <div class="reviews-form-form-container">
-                    <input class="reviews-form__text" type="text" name="name"  placeholder="Имя" required>
-                    <input class="reviews-form__text" type="text" name="city" placeholder="Ваш город" >
-                    <input class="reviews-form__text" type="email" name="email" placeholder="Почтовый ящик" required>
+                    <input class="reviews-form__text" type="text" name="name" autocomplete="on"  placeholder="Имя" required>
+                    <input class="reviews-form__text" type="text" name="city" autocomplete="on" placeholder="Ваш город" >
+                    <input class="reviews-form__text" type="email" name="email" autocomplete="on" placeholder="Почтовый ящик" required>
                     <label class="reviews-form__stars" for="stars">
                         <span class="reviews-form__stars-value">Кол-во звезд: 3</span>
                         <input class="reviews-form__stars-count" value="3" min="1" max="5" type="range" name="stars">
@@ -518,9 +518,9 @@
                     Оперативный выезд, демонстрация примеров решений.
                 </h3>
                 <form class="consultation__form" action="/">
-                    <input class="consultation__form-text" type="text" name="name" placeholder="Имя" required>
-                    <input class="consultation__form-text" type="tel" name="telephone" placeholder="Телефон" required>
-                    <input class="consultation__form-text" type="email" name="email" placeholder="Почтовый ящик">
+                    <input class="consultation__form-text" type="text" name="name" autocomplete="on" placeholder="Имя" required>
+                    <input class="consultation__form-text" type="tel" name="telephone" autocomplete="on" placeholder="Телефон" required>
+                    <input class="consultation__form-text" type="email" name="email" autocomplete="on" placeholder="Почтовый ящик">
                     <button class="consultation__form-btn" type="submit">
                         Отправить
                     </button>
@@ -946,17 +946,17 @@
                     <div class="calculator__content-form-people-info-container">
                         <label>
                             <span>Ваше Имя</span>
-                            <input type="text" name="name" required
+                            <input autocomplete="on" type="text" name="name" required
                             placeholder="Введите имя">
                         </label>
                         <label>
                             <span>Ваш Телефон</span>
-                            <input type="tel" name="telephone" required
+                            <input autocomplete="on" type="tel" name="telephone" required
                             placeholder="+123456789">
                         </label>
                         <label>
                             <span>Ваша Почта</span>
-                            <input type="email" name="email"
+                            <input autocomplete="on" type="email" name="email"
                             placeholder="example@mail.com">
                         </label>
                         <button class="calculator__content-form-people-info-container-btn" type="submit">
