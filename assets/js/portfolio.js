@@ -1,44 +1,32 @@
-
-
-
-
-
-  $('.portfolio__cards-active').slick({
-    dots: false,
-    infinite: false,
-    arrows: false,
-    prevArrow: false,
-    nextArrow:false,
-    autoplay:3000,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
+const oGallery = document.querySelector('.hey');
+oGallery.addEventListener('click', function(ev) {
+  if (ev.target.tagName != 'IMG') { return false; };
+  let oTarget = ev.target, nWidth, nHeight, nRatio = oTarget.offsetWidth / oTarget.offsetHeight;
+  let oBig = this.appendChild(document.createElement('DIV'));
+  oBig.style.position = `absolute`;
+  oBig.style.top = `${oTarget.offsetTop}px`; oBig.style.left = `${oTarget.offsetLeft}px`;
+  oBig.style.width = `${oTarget.offsetWidth}px`; oBig.style.height = `${oTarget.offsetHeight}px`;
+  if (this.offsetHeight < this.offsetWidth) {
+    nHeight = this.offsetHeight; nWidth = nHeight * nRatio;
+  } else {
+    nWidth = this.offsetWidth; nHeight = nWidth / nRatio;
+  };
+  oBig.style.background = `center / 100% 100% no-repeat url('${oTarget.currentSrc}')`;
+  oBig.insertAdjacentHTML('beforeend', '<div class="close">×</div>');
+  oBig.addEventListener('transitionend', function() { this.querySelector('.close').style.opacity = 1; });
+  oBig.addEventListener('click', function(ev) {
+    ev.stopPropagation();
+    this.addEventListener('transitionend', function() { this.remove(); });
+    this.style.transition = `.5s ease-in`;
+    this.style.height = this.style.width = `0px`;
+  oGallery.classList.toggle('show', false);
   });
+  oBig.classList.toggle('active');
+  oBig.style.width = `${95}%`; oBig.style.height = `${50}%`;
+  oBig.style.maxWidth = `${400}px`
+  oBig.style.maxHeight = `clamp(${10}rem,${20}rem,${23}rem)`;
+
+  oBig.style.top = oBig.style.left = `50%`;
+  oBig.style.transform = `translate(-50%, -50%) rotate(1turn)`;
+  oGallery.classList.toggle('show', true);
+});

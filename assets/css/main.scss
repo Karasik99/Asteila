@@ -2516,85 +2516,110 @@ hr{
 // /////////////////Portfolio////////////////////////////////////////
 
 
-.slick-dots{
-    opacity: 0;
-    pointer-events: none;
-}
-
 .portfolio{
     width: 100%;
-    height: auto;
     padding: 1.5rem;
     overflow: hidden;
     background-color: #303030;
-    cursor: grab;
     
     
-    &__wrapper{
+    &__cards {
         border-radius: 1rem;
-        width: 100%;
         display: flex;
-        flex-direction: column;
-        gap: 2rem;
         justify-content: center;
         align-items: center;
         overflow: hidden;
-    }
-
-    &__cards-active{
         width: 100%;
-        height: auto;
-    }
-
-
-    &__cards-active img{
-        object-fit: cover;
-        width: inherit;
-        height: inherit;
-        border-radius: 1rem;
-    }
-
-    &__cards{
-        width: inherit;
-        display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
     }
 
+
     &__card{
+        width: 32%;
+        height: 400px;
+        cursor: pointer;
         position: relative;
+        transform: scale(1);
     }
 
-
-    &__card-btn{
-        padding: 1rem 2.5rem;
-        border: 1px solid #fff;
-        background-color: transparent;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: .9rem;
+    &__card__conteiner{
+        display: none;
         position: absolute;
-        top: 80%;
+        top: 1%;
+        right: 1%;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__card__conteiner.active{
+        display: block;
+    }
+
+    &__card__conteiner::before{
+        content: '';
+        position: absolute;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -20%);
-        transition: all .4s;
-    }
-
-    &__card-btn:hover{
-        transition: all .4s;
-        color: #303030;
+        transform: translate(-50%,-50%) rotate(45deg);
         background-color: #fff;
+        width: 100%;
+        height: 3px;
     }
 
-    &__cards-active img{
-        width: 100% !important;
-        border-radius: 1rem;
-        object-fit: cover;
-        height: clamp(20rem,35vw,35rem) !important;
-        opacity: .7;
+    &__card__conteiner::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+        background-color: #fff;
+        width: 100%;
+        height: 3px;
     }
     
+    &__card img{
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__card.active img{
+        transform: scale(2);
+    }
 
 }
+
+
+.hey {
+    position: relative; display: flex; flex-flow: row wrap;
+    justify-content: space-evenly; align-items: center;
+    height: 100%; width: 90%; margin: 0 auto;
+    background-color: #fff;
+  }
+  .hey img {
+    height: auto; width: 200px; margin: 10px;
+    box-shadow: 0 0 0 5px #fff, 0 0 0 6px #919191;
+    transition: .5s linear; cursor: pointer;
+  }
+  .show img { opacity: .25; pointer-events: none; }
+  .active {
+    transition: box-shadow .5s linear .5s, top 1s ease-out, left 1s ease-out, transform 1s ease-out, width 1s ease-in, height 1s ease-in;
+    box-shadow: 0 0 0 10px #fff; filter: drop-shadow(1px 2px 6px #000);
+    pointer-events: none;
+  }
+  .close {
+    position: relative; left: 100%;
+    height: 20px; width: 20px;
+    transform: translate(0%, -100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff, 0 0 2px 2px #000;
+    font: bold 20px/20px Arial; text-align: center;
+    background-color: #000; color: #fff;
+    pointer-events: auto; cursor: pointer;
+    transition: 1s linear; opacity: 0;
+  }
+  .active .close:hover { transform: translate(0%, -100%) rotate(.5turn); transition: 1s ease; }
 
 
 ////////////////////////////////////////////////////////////////////
