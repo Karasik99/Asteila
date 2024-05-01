@@ -3,7 +3,7 @@ oGallery.addEventListener('click', function(ev) {
   if (ev.target.tagName != 'IMG') { return false; };
   let oTarget = ev.target, nWidth, nHeight, nRatio = oTarget.offsetWidth / oTarget.offsetHeight;
   let oBig = this.appendChild(document.createElement('DIV'));
-  oBig.style.position = `absolute`;
+  oBig.style.position = `fixed`;
   oBig.style.top = `${oTarget.offsetTop}px`; oBig.style.left = `${oTarget.offsetLeft}px`;
   oBig.style.width = `${oTarget.offsetWidth}px`; oBig.style.height = `${oTarget.offsetHeight}px`;
   if (this.offsetHeight < this.offsetWidth) {
@@ -22,7 +22,7 @@ oGallery.addEventListener('click', function(ev) {
   oGallery.classList.toggle('show', false);
   });
   oBig.classList.toggle('active');
-  oBig.style.width = `${95}%`; oBig.style.height = `${50}%`;
+  oBig.style.width = `${85}%`; oBig.style.height = `${50}%`;
   oBig.style.maxWidth = `${400}px`
   oBig.style.maxHeight = `clamp(${10}rem,${20}rem,${23}rem)`;
 
