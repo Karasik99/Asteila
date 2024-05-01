@@ -738,18 +738,6 @@ hr {
   font-size: 0.9rem;
   overflow-y: scroll;
 }
-.directions__card-text::-webkit-scrollbar {
-  width: 0.5rem !important;
-  -webkit-appearance: none !important;
-}
-.directions__card-text::-webkit-scrollbar-track {
-  background: #999 !important;
-}
-.directions__card-text::-webkit-scrollbar-thumb {
-  background-color: #303030 !important;
-  border-radius: 1rem !important;
-  border: 2px solid #303030 !important;
-}
 .directions__card-btn {
   border: 1px solid #ffffff;
   color: #ffffff;
