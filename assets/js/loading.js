@@ -5,3 +5,10 @@ window.addEventListener('load',((event)=>{
     BODY.classList.remove('activebody')
     GetReviews()
 }))
+
+window.addEventListener('touchmove',Loading)
+
+function Loading(){
+    LOAD.classList.add('active')
+    BODY.classList.remove('activebody')
+}
