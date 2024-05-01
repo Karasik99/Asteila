@@ -13,6 +13,7 @@
     -webkit-appearance: none;
  }
 
+
 .slick-slide {
     margin: 0 1rem;
 }
@@ -870,17 +871,18 @@ hr{
         }
 
         &-text::-webkit-scrollbar {
-            width: .5rem;         
+            width: .5rem !important; 
+            -webkit-appearance: none !important;        
           }
         
         &-text::-webkit-scrollbar-track {
-            background: #999;       
+            background: #999 !important;       
           }
     
         &-text::-webkit-scrollbar-thumb {
-            background-color: #303030;  
-            border-radius: 1rem;       
-            border: 2px solid #303030;  
+            background-color: #303030 !important;  
+            border-radius: 1rem !important;       
+            border: 2px solid #303030 !important;  
           }
 
         &-btn{
