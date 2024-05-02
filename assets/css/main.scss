@@ -182,7 +182,7 @@ hr{
         // font-family: "Cinzel", serif;
         // font-optical-sizing: auto;
         
-        font-weight: 400;
+        font-weight: 600;
         font-size: clamp(4rem,7vw,7rem);
         animation: hey 5s infinite forwards linear;
     }
@@ -192,8 +192,9 @@ hr{
         // font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
-        font-size: clamp(1.5rem,5vw,5rem);
+        font-size: clamp(1.3rem,4vw,5rem);
         color: #303030;
+        text-align: center;
     }
 }
 
@@ -630,7 +631,7 @@ hr{
 
         // font-family: "Cinzel", serif;
         // font-optical-sizing: auto;
-        font-weight: 500;
+        font-weight: 600;
         
         color: #dfd3b5;
         font-style: normal;
@@ -919,7 +920,7 @@ hr{
     &__slider-wrapper{
         // width: clamp(25rem,50vw,50rem);
         width: 100%;
-        height: clamp(25rem,40vw,50rem);
+        height: clamp(25rem,40vw,64rem);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1100,6 +1101,7 @@ hr{
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        flex-grow: 1;
     }
 
     &__card{
@@ -1139,17 +1141,16 @@ hr{
     &__gallery{
         height: inherit;
         display: flex;
-        gap: 2rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-grow: 2;
+        gap: 1rem;
     }
 
     &__gallery img{
         width: 100%;
-        height: 31.3%;
-        object-fit: cover;
+        flex-grow: 1;
+        height: 33.33%;
     }
 
 
@@ -1583,6 +1584,7 @@ hr{
         background-color: #f1f1f1;
         border-radius: 1rem;
         position: relative;
+        margin-bottom: 3.5rem;
     }
 
     &__card__user::before{
@@ -1649,6 +1651,28 @@ hr{
         position: relative;
     }   
     
+}
+
+.slick-prev {
+    left: 0;
+    top: 94%;
+    z-index: 10000;
+}
+
+.slick-next {
+    right: 1.2rem;
+    top: 94%;
+    z-index: 10000;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 2.5rem;
+    line-height: 1;
+    opacity: .75;
+    color: #999;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .calculator{
@@ -2309,7 +2333,7 @@ hr{
         text-align: center;
         // font-family: "Cinzel", serif;
         // font-optical-sizing: auto;
-        font-weight: 500;
+        font-weight: 600;
         color: #fff;
         font-style: normal;
         font-size: clamp(2rem,3.5vw,4rem);
@@ -2607,7 +2631,7 @@ hr{
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        padding: 1rem;
+        padding: 1rem 0;
     }
 
     &__content{
@@ -2627,32 +2651,27 @@ hr{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.9)),url('../images/cornices-bg.jpg');
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: top right;
         background-size: cover;
         padding-bottom: 6rem;
-        background-blend-mode: exclusion;
     }
 
     &__content-img{
         width: 100%;
-        height: clamp(20rem,40vw,40rem);
         border-radius: 1rem;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     &__content-photo-1{
-        background-image: url('../images/lamps/3.jpg');
+        background-image: url('../images/cornices/1.jpg');
     }
     &__content-photo-2{
-        background-image: url('../images/lamps/2.jpg');
+        background-image: url('../images/cornices/2.jpg');
     }
     &__content-photo-3{
-        background-image: url('../images/lamps/1.jpg');
+        background-image: url('../images/cornices/3.jpg');
     }
     &__content-photo-4{
-        background-image: url('../images/lamps/4.jpg');
+        background-image: url('../images/cornices/4.jpg');
     }
 
     &__content-text{
@@ -2803,11 +2822,11 @@ hr{
         }
     }
     .offers__cards{
-        flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
     }
     .offers__card{
-        width: 100%;
+        width: 49%;
     }
 }
 
@@ -2907,36 +2926,19 @@ hr{
         background-image: url('../images/newgallery-4.jpg');
     }
     
-    .reviews__card__user{
-        margin-bottom: 3.5rem;
-    }
-
-    .slick-prev {
-        left: 0;
-        top: 94%;
-        z-index: 10000;
-    }
-    
-    .slick-next {
-        right: 1.2rem;
-        top: 94%;
-        z-index: 10000;
-    }
-    
-    .slick-prev:before, .slick-next:before {
-        font-family: 'slick';
-        font-size: 2.5rem;
-        line-height: 1;
-        opacity: .75;
-        color: #999;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
 
     .portfolio{
         justify-content: center;
     }
     .portfolio img{
+        width: 100%;
+    }
+
+    .offers__cards{
+        align-items: center;
+        flex-direction: column;
+    }
+    .offers__card{
         width: 100%;
     }
 
@@ -3182,7 +3184,7 @@ hr{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.9)),url('../images/cornices-bg-small.jpg');
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: 95%;
         background-size: cover;
         padding-bottom: 1rem !important;
         background-blend-mode: inherit;
