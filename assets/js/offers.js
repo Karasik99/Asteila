@@ -17,4 +17,7 @@ BODY.addEventListener('click',((event)=>{
             event.classList.remove('active')
         })
     }
+    if(!event.target.closest('.langs')){
+        LANGSMENU.classList.remove('active')
+    }
 }))

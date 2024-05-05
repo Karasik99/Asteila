@@ -8,28 +8,3 @@ LINKS.addEventListener('click',((e)=>{
 
 
 
-
-let ACTIVECOUNTRY = document.querySelector('.active-lang')
-let COUNTRIES = document.querySelector('.Countries')
-
-let ACTIVECOUNTRYMOBILE = document.querySelector('.mobile-lang')
-let COUNTRIESMOBILE = document.querySelector('.mobile-countries')
-
-ACTIVECOUNTRY.addEventListener('click',((event)=>{
-    if(event.target.closest('.active-lang')){
-        COUNTRIES.classList.toggle('active')
-    }
-}))
-
-ACTIVECOUNTRYMOBILE.addEventListener('touchmove',((event)=>{
-    if(event.target.closest('.mobile-lang')){
-        COUNTRIESMOBILE.classList.toggle('active')
-    }
-}))
-
-ACTIVECOUNTRYMOBILE.addEventListener('click',((event)=>{
-    if(event.target.closest('.mobile-lang')){
-        COUNTRIESMOBILE.classList.toggle('active')
-    }
-}))
-

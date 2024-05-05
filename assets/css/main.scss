@@ -71,91 +71,6 @@ hr{
     overflow-y: hidden;
 }
 
-.language{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-
-.active-lang{
-    cursor: pointer;
-    border-radius: .7rem;
-    padding: .5rem;
-    background-color: transparent;
-    border: 1px solid black;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    width: inherit;
-    position: relative;
-}
-
-.active-lang img{
-    max-width: 30px;
-    max-height: 30px;
-}
-
-.Countries{
-    position: absolute;
-    top: 100%;
-    z-index: 1000;
-    left: -15%;
-    width: inherit;
-    opacity: 0;
-    pointer-events: none;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    gap: 1rem;
-}
-
-.mobile-countries{
-    left: 20% !important;
-}
-
-.Countries.active{
-    opacity: 1;
-    pointer-events: all;
-}
-
-.coutry{
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    padding: 1.5rem;
-}
-
-.ru{
-    background-image: url('../images/icons/ru.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.en{
-    background-image: url('../images/icons/en.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.latvia{
-    background-image: url('../images/icons/latvia.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.lithuania{
-    background-image: url('../images/icons/lithuania.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .loading{
     z-index: 10000;
@@ -222,6 +137,101 @@ hr{
 
     }
 }
+
+
+.langs{
+    font-size: clamp(0.9rem, 1.1vw, 1.2rem);
+    transition: all 0.4s;
+    border: 0.1rem solid #dfd3b5;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: #dfd3b5;
+    transition: all 0.4s;
+    background-color: transparent;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.langs:hover{
+    transition: all 0.4s;
+    background-color: #dfd3b5;
+    color: #000000;
+}
+
+.langs-items{
+    width: 70%;
+    padding: 1rem;
+    background-color: #363535;
+    border: 2px solid #dfd3b5;
+    border-radius: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 12000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.langs-items.active{
+    transition: all .4s;
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+.langs-items-card{
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: #949090;
+    border:1px solid #949090;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+.langs-items-card:hover {
+    background-color: transparent;
+    border:1px solid #d6bd7e;
+    border-radius: 1rem;
+    transition: all .4s;
+
+}
+.langs-items-card:hover .langs-items-card-country{
+    color: #d6bd7e;
+}
+.langs-items-card:hover .langs-items-card-title{
+    color: #d6bd7e;
+}
+
+.langs-items-title{
+    font-size: clamp(1rem,3vw,3rem);
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.langs-items-country{
+    font-size: clamp(.7rem,2vw,2rem);
+    color: #fff;
+    font-weight: 400;
+    pointer-events: none;
+}
+
 
 .header{
 
@@ -315,8 +325,13 @@ hr{
         width: 130%;
         height: auto;
         border-radius: 1rem;
+        padding: .5rem;
+        text-align: center;
         color: #d6bd7e;
         background: #303030;
+        z-index: 1000;
+        font-size: clamp(.9rem,1.1vw,1.2rem);
+
     }
 
     &__item-2 img{
@@ -336,6 +351,8 @@ hr{
         color: #dfd3b5;
         border: none;
         cursor: pointer;
+        font-size: clamp(.9rem,1.1vw,1.2rem);
+
     }
       
     &__item-2-dropdown-content,
@@ -426,6 +443,8 @@ hr{
     &__menu-3{
         display: flex;
         gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
     }
 
     &__link-3{
@@ -1122,7 +1141,7 @@ hr{
         &-img{
             position: absolute;
             border-radius: 50%;
-            top: 32%;
+            top: 30%;
             left: -5%;
         }
 
@@ -1982,7 +2001,7 @@ hr{
 }
 
 .popup-form{
-    z-index: 1000;
+    z-index: 13000;
     opacity: 1;
     background-color: #999;
     border-radius: 1rem;
@@ -2098,6 +2117,12 @@ hr{
         cursor: pointer;
         transition: all 0.4s;
         text-align: center;
+    }
+
+    &__btn:hover{
+        transition: all 0.4s;
+        background-color: #d6bd7e;
+        
     }
 }
 
@@ -2594,27 +2619,8 @@ hr{
     max-height: clamp(6rem,28vw,16rem);
     object-fit: inherit; 
     box-shadow: 0 0 0 5px #303030, 0 0 0 6px #919191;
-    transition: .5s linear; cursor: pointer;
+    transition: .5s linear;
   }
-  .show img { opacity: .25; pointer-events: none; }
-  .actives {
-    transition: box-shadow .5s linear .5s, top 1s ease-out, left 1s ease-out, transform 1s ease-out, width 1s ease-in, height 1s ease-in;
-    box-shadow: 0 0 0 10px #fff; filter: drop-shadow(1px 2px 6px #000);
-    pointer-events: none;
-  }
-  .close {
-    position: relative; left: 100%;
-    height: 20px; width: 20px;
-    transform: translate(0%, -100%);
-    border-radius: 50%;
-    box-shadow: 0 0 0 2px #fff, 0 0 2px 2px #000;
-    font: bold 20px/20px Arial; text-align: center;
-    background-color: #000; color: #fff;
-    pointer-events: auto; cursor: pointer;
-    transition: 1s linear; opacity: 0;
-  }
-  .active .close:hover { transform: translate(0%, -100%) rotate(.5turn); transition: 1s ease; }
-
 
 ////////////////////////////////////////////////////////////////////
 
@@ -2636,9 +2642,7 @@ hr{
 
     &__content{
         width: 100%;
-        padding: 1rem;
         border-radius: 1rem;
-        background-color: #999;
         display: flex;
         gap: 1rem;
         flex-direction: column;
@@ -2752,12 +2756,34 @@ hr{
 
 
 
+@media (max-width:2560px) {
+        .jobswithus__card-img {
+        position: absolute;
+        border-radius: 50%;
+        top: 30%;
+        left: -2%;
+    }
+}
+
+@media (max-width:1920px) {
+        .jobswithus__card-img {
+        position: absolute;
+        border-radius: 50%;
+        top: 30%;
+        left: -2%;
+    }
+}
 
 
 
-
-
-
+@media (max-width:1366px) {
+        .jobswithus__card-img {
+        position: absolute;
+        border-radius: 50%;
+        top: 30%;
+        left: -4%;
+    }
+}
 
 
 
@@ -2856,6 +2882,13 @@ hr{
 }
 
 @media (max-width:768px) {
+
+    .jobswithus__card-img {
+        position: absolute;
+        border-radius: 50%;
+        top: 30%;
+        left: -3%;
+    }
     .jobswithus{
         &__card{
             min-width: auto;
@@ -2973,7 +3006,14 @@ hr{
     }
 }
 
-@media (max-width:1150px) {
+
+@media (max-width:1023px) {
+    .portfolio{
+        justify-content: center;
+    }
+    .portfolio img{
+        width: 47%;
+    }
     .header__nav,
     .header__menu-3,
     .header__btn{
@@ -2992,20 +3032,16 @@ hr{
 
 }
 
-@media (max-width:1024px) {
-    .portfolio{
-        justify-content: center;
-    }
-    .portfolio img{
-        width: 47%;
-    }
-
-}
-
 
 @media (max-width:945px){
     .reviews__card__user-info{
         align-items: flex-start;
+    }
+    .consultation__form-text{
+        width: 100%;
+    }
+    .consultation__form-btn{
+        width: 100%;
     }
 }
 
@@ -3142,10 +3178,25 @@ hr{
         scrollbar-color: #838383 #000000;
     }
 
+    .langs-items{
+        width: 90%;
+        gap: .5rem;
+    }
+    .langs-items-card{
+        padding: .5rem;    
+    }
+
 
 }
 
 @media (max-width:425px){
+
+    .jobswithus__card-img {
+        position: absolute;
+        border-radius: 50%;
+        top: 30%;
+        left: -6%;
+    }
     .header__info{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.9)),url('../images/header-bg-2.png');
@@ -3194,7 +3245,7 @@ hr{
 
 @media (max-width:450px){
     .header__info-btn-2{
-        padding: 0.7rem 2rem;
+        padding: 0.7rem 1rem;
     }
 
     .reviews__card__content{

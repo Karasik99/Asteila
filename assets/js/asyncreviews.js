@@ -15,7 +15,7 @@ STARSINPUT.addEventListener('mousemove',GetStarsCount)
 STARSINPUT.addEventListener('touchmove',GetStarsCount)
 
 function GetStarsCount(event){
-  STARSVALUE.innerHTML = `Кол-во звезд: ${event.target.value}`
+  STARSVALUE.innerHTML = `Stars: ${event.target.value}`
 }
 
 REVIEWSCARDSLIDERBTN.addEventListener('click',(event)=>{
