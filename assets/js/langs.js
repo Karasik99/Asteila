@@ -54,7 +54,7 @@ function Translate(CURRENTLANG){
         document.querySelector('.text20').innerHTML = data.text20[CURRENTLANG]
         document.querySelector('.text21').innerHTML = data.text21[CURRENTLANG]
         document.querySelector('.text22').innerHTML = data.text22[CURRENTLANG]
-        document.querySelector('.text23').innerHTML = data.text7[CURRENTLANG]
+        document.querySelector('.text23').innerHTML = data.text11[CURRENTLANG]
         document.querySelector('.text24').innerHTML = data.text13[CURRENTLANG]
         document.querySelector('.text25').innerHTML = data.text14[CURRENTLANG]
         document.querySelector('.text26').innerHTML = data.text8[CURRENTLANG]
@@ -201,6 +201,7 @@ function Translate(CURRENTLANG){
         document.querySelector('.text170').placeholder = data.text170[CURRENTLANG]
         document.querySelector('.text171').innerHTML = data.text63[CURRENTLANG]
         document.querySelector('.text172').innerHTML = data.text172[CURRENTLANG]
+        
     }
     catch(err){
         console.log(`Произошел отлов ошибки ${err}`)

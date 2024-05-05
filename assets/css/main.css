@@ -316,7 +316,6 @@ hr {
   position: absolute;
   left: -40%;
   background-color: #303030;
-  width: -moz-max-content;
   width: max-content;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -546,7 +545,6 @@ hr {
 .aside-content {
   left: 105%;
   top: 0%;
-  width: -moz-min-content;
   width: min-content;
 }
 .aside__logo {
@@ -818,8 +816,7 @@ hr {
 .directions__slider-line img {
   width: inherit;
   height: inherit;
-  -o-object-fit: inherit;
-     object-fit: inherit;
+  object-fit: inherit;
 }
 .directions__buttons {
   margin-top: 0.7rem;
@@ -868,8 +865,7 @@ hr {
 .directions__dot.active {
   background-color: #303030;
   box-shadow: none;
-  -webkit-backdrop-filter: none;
-          backdrop-filter: none;
+  backdrop-filter: none;
   filter: none;
 }
 
@@ -904,9 +900,6 @@ hr {
   background-color: #949090;
   opacity: 0.8;
   cursor: pointer;
-  color: #fff;
-}
-.consultation__form-text::-moz-placeholder {
   color: #fff;
 }
 .consultation__form-text::placeholder {
@@ -1080,8 +1073,7 @@ hr {
 }
 .offers__card-title-img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-bottom: 0.5rem;
 }
 .offers__card-menu {
@@ -1268,8 +1260,7 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .reviews__videos-navigation {
   position: absolute;
@@ -1550,9 +1541,7 @@ hr {
 .calculator__content-range {
   width: 100%;
   height: 0.7rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: #fff;
   border-radius: 1rem;
   cursor: pointer;
@@ -1560,8 +1549,7 @@ hr {
 }
 .calculator__content-range::-webkit-slider-thumb {
   background-color: #d6bd7e;
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   border-radius: 50%;
   border: 0.1rem solid black;
   height: 0.7rem;
@@ -1669,8 +1657,7 @@ hr {
   border-radius: 50%;
   width: inherit;
   height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @keyframes Skale {
   0% {
@@ -1692,7 +1679,6 @@ hr {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  height: -moz-max-content;
   height: max-content;
   overflow: hidden;
   transition: all 0.4s;
@@ -1724,8 +1710,7 @@ hr {
   border-radius: 50%;
   width: inherit;
   height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .popup-form {
@@ -1818,9 +1803,6 @@ hr {
 }
 .popup-form__text:focus {
   outline: none;
-}
-.popup-form__text::-moz-placeholder {
-  color: #fff;
 }
 .popup-form__text::placeholder {
   color: #fff;
@@ -1957,9 +1939,7 @@ hr {
 .reviews-form__stars-count {
   width: 100%;
   height: 0.7rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: #fff;
   border-radius: 1rem;
   cursor: pointer;
@@ -1967,16 +1947,12 @@ hr {
 }
 .reviews-form__stars-count::-webkit-slider-thumb {
   background-color: #dfd3b5;
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   border-radius: 50%;
   border: 0.1rem solid black;
   height: 0.7rem;
   width: 0.7rem;
   box-shadow: -1008px 0 0 1000px #dfd3b5;
-}
-.reviews-form-form-text-review::-moz-placeholder {
-  color: #fff;
 }
 .reviews-form-form-text-review::placeholder {
   color: #fff;
@@ -1996,9 +1972,6 @@ hr {
 }
 .reviews-form__text:focus {
   outline: none;
-}
-.reviews-form__text::-moz-placeholder {
-  color: #fff;
 }
 .reviews-form__text::placeholder {
   color: #fff;
@@ -2104,7 +2077,6 @@ hr {
   left: -25%;
   top: 100%;
   background-color: #303030;
-  width: -moz-max-content;
   width: max-content;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -2233,8 +2205,7 @@ hr {
 .catalog__card-img {
   width: 100%;
   border-radius: 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .lamps__info {
@@ -2261,8 +2232,7 @@ hr {
   border-radius: 1rem;
   width: 32%;
   max-height: clamp(6rem, 28vw, 16rem);
-  -o-object-fit: inherit;
-     object-fit: inherit;
+  object-fit: inherit;
   box-shadow: 0 0 0 5px #303030, 0 0 0 6px #919191;
   transition: 0.5s linear;
 }
@@ -2343,8 +2313,7 @@ hr {
 .hiddencornises__card img {
   width: inherit;
   height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1rem;
 }
 

@@ -4,9 +4,9 @@ window.addEventListener('load',((event)=>{
     BODY.classList.remove('activebody')
     let lang = localStorage.getItem('lang')
     if(lang==null){
-        TranslateTrak(CURRENTLANG)
+        TranslateCornises(CURRENTLANG)
     }
     else{
-        TranslateTrak(lang)
+        TranslateCornises(lang)
     }
 }))

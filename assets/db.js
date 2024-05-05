@@ -721,7 +721,41 @@ let data = {
         "lt": "Paraiška sėkmingai išsiųsta",
         "lv": "Pieteikums veiksmīgi nosūtīts"
     },
+    "text173":{
+        "ru": "Электрокарниз - это конструкция, которая состоит из нескольких элементов: профиль, привод, трос, ремень. С каждым годом количество устройств, облегчающих нашу жизнь становится все больше. Они помогают нам обеспечить комфорт и уют, как на работе, так и дома. ",
+        "en": "An electric curtain rod is a construction that consists of several elements: profile, drive, cable, strap. Every year the number of devices that facilitate our life becomes more and more. They help us to provide comfort and cosiness both at work and at home. ",
+        "lt": "Elektrinė užuolaidų lazda yra konstrukcija, kurią sudaro keli elementai: profilis, pavara, laidas, diržas. Kasmet daugėja prietaisų, kurie palengvina mūsų gyvenimą. Jie padeda mums užtikrinti komfortą ir jaukumą tiek darbe, tiek namuose. ",
+        "lv": "Elektriskais aizkaru stienis ir konstrukcija, kas sastāv no vairākiem elementiem: profila, piedziņas, kabeļa, siksnas. Ar katru gadu ierīču skaits, kas atvieglo mūsu dzīvi, kļūst arvien lielāks. Tās palīdz mums nodrošināt komfortu un mājīgumu gan darbā, gan mājās. "
+    },
+    "text174":{
+        "ru": "Скрытый карниз - это отличный способ декорировать окна и придать интерьеру особый шарм. Благодаря ему, помещение будет выглядеть стильно и уютно.На сайте представлены не все модели. Наличие уточняйте у менеджера.",
+        "en": "The concealed cornice is a great way to decorate windows and give the interior a special charm. Thanks to it, the room will look stylish and cosy.Not all models are presented on the site. Please check the availability with the manager.",
+        "lt": "Paslėptas karnizas - puikus būdas papuošti langus ir suteikti interjerui ypatingo žavesio. Dėl jo kambarys atrodys stilingai ir jaukiai.Svetainėje pateikiami ne visi modeliai. Dėl jų prieinamumo pasitarkite su vadybininku.",
+        "lv": "Slēptās karnīzes ir lielisks veids, kā izrotāt logus un piešķirt interjeram īpašu šarmu. Pateicoties tam, telpa izskatīsies stilīga un mājīga.Ne visi modeļi ir apskatāmi vietnē. Lūdzu, noskaidrojiet pieejamību pie menedžera."
+    },
+    "text175":{
+        "ru": "Точечные светильники - это компактное и стильное решение. Благодаря своей универсальности, они помогут вам создать уютное и стильное освещение.На сайте представлены не все модели светильников. На сайте представлены не все модели светильников. Наличие уточняйте у менеджера.",
+        "en": "Spotlights are a compact and stylish solution. Thanks to their versatility, they will help you create cosy and stylish lighting.Not all models of luminaires are shown on the website. Not all models of luminaires are presented on the site. Please check availability with your manager.",
+        "lt": "Prožektoriai yra kompaktiškas ir stilingas sprendimas. Dėl savo universalumo jie padės jums sukurti jaukų ir stilingą apšvietimą.Svetainėje pateikiami ne visi šviestuvų modeliai. Svetainėje pateikiami ne visi šviestuvų modeliai. Dėl prieinamumo pasitarkite su vadybininku.",
+        "lv": "Prožektori ir kompakts un stilīgs risinājums. Pateicoties to daudzpusībai, tie palīdzēs jums radīt mājīgu un stilīgu apgaismojumu.Ne visi gaismekļu modeļi ir parādīti vietnē. Ne visi gaismekļu modeļi ir parādīti vietnē. Lūdzu, noskaidrojiet pieejamību pie sava menedžera."
+    },
+    "text176":{
+        "ru": "Наше портфолио - это множество успешных проектов.Наши работы отличаются высоким качеством материалов, аккуратностью установки и креативным подходом к каждому клиенту. Заказывая у нас установку натяжных потолков, вы можете быть уверены в профессиональном подходе и качественной работе. Обращайтесь к нам, и мы поможем вам создать потолок вашей мечты!",
+        "en": "Our portfolio is a lot of successful projects.Our work is characterised by high quality materials, neatness of installation and creative approach to each client. Ordering stretch ceilings installation from us, you can be sure of a professional approach and quality work. Contact us and we will help you create the ceiling of your dreams!",
+        "lt": "Mūsų portfelyje - daugybė sėkmingų projektų.Mūsų darbai pasižymi aukšta medžiagų kokybe, montavimo tvarkingumu ir kūrybišku požiūriu į kiekvieną klientą. Užsisakydami įtempiamų lubų montavimą pas mus, galite būti tikri dėl profesionalaus požiūrio ir kokybiško darbo. Susisiekite su mumis ir mes padėsime sukurti jūsų svajonių lubas!",
+        "lv": "Mūsu portfolio ir daudz veiksmīgu projektu.Mūsu darbu raksturo augstas kvalitātes materiāli, montāžas veikums un radoša pieeja katram klientam. Pasūtot pie mums stiepto griestu montāžu, jūs varat būt droši par profesionālu pieeju un kvalitatīvu darbu. Sazinieties ar mums, un mēs palīdzēsim jums izveidot jūsu sapņu griestus!"
+    },
+    "text177":{
+        "ru": "Магнитная трековая система- это современная технология освещения, которая позволяет легко и эффективно создавать различные световые сценарии. Основным преимуществом такой системы является возможность легкой регулировки направления и интенсивности света.На сайте представлены не все модели светильников. Наличие уточняйте у менеджера.",
+        "en": "Magnetic track system is a modern lighting technology that allows you to easily and efficiently create different lighting scenarios. The main advantage of this system is the ability to easily adjust the direction and intensity of light.Not all models of lights are presented on the site. Please check availability with your manager.",
+        "lt": "Magnetinių bėgių sistema - tai moderni apšvietimo technologija, leidžianti lengvai ir efektyviai kurti įvairius apšvietimo scenarijus. Pagrindinis šios sistemos privalumas - galimybė lengvai reguliuoti šviesos kryptį ir intensyvumą. svetainėje pateikiami ne visi šviestuvų modeliai. Dėl prieinamumo pasitarkite su vadybininku.",
+        "lv": "Magnētiskā sliežu sistēma ir moderna apgaismojuma tehnoloģija, kas ļauj viegli un efektīvi izveidot dažādus apgaismojuma scenārijus. Šīs sistēmas galvenā priekšrocība ir iespēja viegli regulēt gaismas virzienu un intensitāti.Ne visi apgaismojuma modeļi ir pārstāvēti vietnē. Lūdzu, noskaidrojiet pieejamību pie sava menedžera."
+    },
+    "text178":{
+        "ru": "Трековая система",
+        "en": "Track system",
+        "lt": "Bėgių sistema",
+        "lv": "Izsekošanas sistēma"
+    },
     
-
-
 }    
