@@ -24,7 +24,7 @@ let data = {
     "text4":{
         "ru": "Режим работы",
         "en": "Work mode",
-        "lt": "Veikimo režimas",
+        "lt": "Darbo laikas",
         "lv": "Darbības režīms"
     },
     "text5":{
@@ -66,13 +66,13 @@ let data = {
     "text11":{
         "ru": "Портфолио",
         "en": "Portfolio",
-        "lt": "Portfelį",
+        "lt": "Portfelis",
         "lv": "Portfelis"
     },
     "text12":{
         "ru": "Перезвоните нам",
         "en": "Call us",
-        "lt": "Skambinkite mums atgal",
+        "lt": "Gauti konsultaciją",
         "lv": "Zvaniet mums atpakaļ"
     },
     "text13":{
@@ -143,14 +143,14 @@ let data = {
     },
     "text36":{
         "ru": "Бесплатный замер",
-        "en": "Bezmaksas mērījumi",
+        "en": "Free measurement",
         "lt": "Nemokamas matavimas",
         "lv": "Bezmaksas mērījumi"
     },
     "text37":{
         "ru": "Дизайн, консультация и доставка",
         "en": "Design, consultation and delivery",
-        "lt": "Projektavimas, konsultacijos ir pristatymas",
+        "lt": "Projektavimas, konsultavimas ir  pristatymas",
         "lv": "Projektēšana, konsultācijas un piegāde"
     },
     "text38":{
@@ -162,7 +162,7 @@ let data = {
     "text39":{
         "ru": "Используем перфораторы с пылесборником",
         "en": "Use drills with dust collector",
-        "lt": "Naudokite grąžtus su dulkių surinktuvu",
+        "lt": "Naudojame gręžtuvus su dulkių surinktuvais",
         "lv": "Izmantojiet urbjus ar putekļu savācēju"
     },
     "text40":{
@@ -216,13 +216,13 @@ let data = {
     "text48":{
         "ru": "Удобство коммуникаций",
         "en": "Convenience of communications",
-        "lt": "Ryšių patogumas",
+        "lt": "Patogi komunikacija",
         "lv": "Saziņas ērtības"
     },
     "text49":{
         "ru": "Телефон, мессенджеры, электронная почта",
         "en": "Phone, messengers, email",
-        "lt": "Telefonas, pasiuntiniai, el. paštas",
+        "lt": "Telefonas, Whatsapp, Viber, el. paštas",
         "lv": "Tālrunis, kurjeri, e-pasts"
     },
     "text50":{
@@ -291,7 +291,7 @@ let data = {
     "text60":{
         "ru": "Имя",
         "en": "Name",
-        "lt": "Pavadinimas",
+        "lt": "Vardas",
         "lv": "Nosaukums"
     },
 
@@ -323,13 +323,13 @@ let data = {
     "text65":{
         "ru": "Вызов замерщика",
         "en": "Measuring call",
-        "lt": "Matavimo skambutis",
+        "lt": "Matuotojo iškvietimas",
         "lv": "Mērīšanas izsaukums"
     },
     "text66":{
         "ru": "Бесплатный выезд специалиста для проведения замеров ",
         "en": "Free expert visit for measuring ",
-        "lt": "Nemokamas eksperto apsilankymas matuojant ",
+        "lt": "Nemokamas eksperto apsilankymas, atliekant matavimą ",
         "lv": "Bezmaksas eksperta apmeklējums mērījumu veikšanai "
     },
     "text67":{
@@ -401,7 +401,7 @@ let data = {
     "text78":{
         "ru": "Принимаете работу и вносите остаток суммы",
         "en": "You accept the job and pay the balance of the amount",
-        "lt": "Sutinkate atlikti darbą ir sumokate likusią sumą.",
+        "lt": "Priimate atliktą darbą ir sumokame likusią sumą.",
         "lv": "Jūs piekrītat darbam un samaksājat atlikušo summu."
     },
     "text79":{
@@ -516,7 +516,7 @@ let data = {
     "text115":{
         "ru": "Вас приветствует компания Asteila!",
         "en": "Welcome to Asteila!",
-        "lt": "Sveiki atvykę į Asteilą!",
+        "lt": "Jus sveikina įmonė Asteila!",
         "lv": "Laipni lūdzam Asteila!"
     },
 
@@ -573,7 +573,7 @@ let data = {
     "text124":{
         "ru": "объектов за все время",
         "en": "objects for all time",
-        "lt": "objektai visą laiką",
+        "lt": "Objektai per visą laiką",
         "lv": "objekti visu laiku"
     },
     "text125":{
@@ -660,7 +660,7 @@ let data = {
     "text141":{
         "ru": "Введите имя",
         "en": "Enter a name",
-        "lt": "Įveskite pavadinimą",
+        "lt": "Vardas ir pavardė",
         "lv": "Ievadiet nosaukumu"
     },
     "text142":{
@@ -730,19 +730,19 @@ let data = {
     "text174":{
         "ru": "Скрытый карниз - это отличный способ декорировать окна и придать интерьеру особый шарм. Благодаря ему, помещение будет выглядеть стильно и уютно.На сайте представлены не все модели. Наличие уточняйте у менеджера.",
         "en": "The concealed cornice is a great way to decorate windows and give the interior a special charm. Thanks to it, the room will look stylish and cosy.Not all models are presented on the site. Please check the availability with the manager.",
-        "lt": "Paslėptas karnizas - puikus būdas papuošti langus ir suteikti interjerui ypatingo žavesio. Dėl jo kambarys atrodys stilingai ir jaukiai.Svetainėje pateikiami ne visi modeliai. Dėl jų prieinamumo pasitarkite su vadybininku.",
+        "lt": "Paslėptas karnizas - puikus būdas papuošti langus ir suteikti interjerui ypatingo žavesio. Dėl jo kambarys atrodys stilingai ir jaukiai. Svetainėje pateikiami ne visi modeliai. Dėl jų prieinamumo pasitarkite su vadybininku.",
         "lv": "Slēptās karnīzes ir lielisks veids, kā izrotāt logus un piešķirt interjeram īpašu šarmu. Pateicoties tam, telpa izskatīsies stilīga un mājīga.Ne visi modeļi ir apskatāmi vietnē. Lūdzu, noskaidrojiet pieejamību pie menedžera."
     },
     "text175":{
         "ru": "Точечные светильники - это компактное и стильное решение. Благодаря своей универсальности, они помогут вам создать уютное и стильное освещение.На сайте представлены не все модели светильников. На сайте представлены не все модели светильников. Наличие уточняйте у менеджера.",
         "en": "Spotlights are a compact and stylish solution. Thanks to their versatility, they will help you create cosy and stylish lighting.Not all models of luminaires are shown on the website. Not all models of luminaires are presented on the site. Please check availability with your manager.",
-        "lt": "Prožektoriai yra kompaktiškas ir stilingas sprendimas. Dėl savo universalumo jie padės jums sukurti jaukų ir stilingą apšvietimą.Svetainėje pateikiami ne visi šviestuvų modeliai. Svetainėje pateikiami ne visi šviestuvų modeliai. Dėl prieinamumo pasitarkite su vadybininku.",
+        "lt": "Prožektoriai yra kompaktiškas ir stilingas sprendimas. Dėl savo universalumo jie padės jums sukurti jaukų ir stilingą apšvietimą. Svetainėje pateikiami ne visi šviestuvų modeliai. Dėl prieinamumo pasitarkite su vadybininku.",
         "lv": "Prožektori ir kompakts un stilīgs risinājums. Pateicoties to daudzpusībai, tie palīdzēs jums radīt mājīgu un stilīgu apgaismojumu.Ne visi gaismekļu modeļi ir parādīti vietnē. Ne visi gaismekļu modeļi ir parādīti vietnē. Lūdzu, noskaidrojiet pieejamību pie sava menedžera."
     },
     "text176":{
         "ru": "Наше портфолио - это множество успешных проектов.Наши работы отличаются высоким качеством материалов, аккуратностью установки и креативным подходом к каждому клиенту. Заказывая у нас установку натяжных потолков, вы можете быть уверены в профессиональном подходе и качественной работе. Обращайтесь к нам, и мы поможем вам создать потолок вашей мечты!",
         "en": "Our portfolio is a lot of successful projects.Our work is characterised by high quality materials, neatness of installation and creative approach to each client. Ordering stretch ceilings installation from us, you can be sure of a professional approach and quality work. Contact us and we will help you create the ceiling of your dreams!",
-        "lt": "Mūsų portfelyje - daugybė sėkmingų projektų.Mūsų darbai pasižymi aukšta medžiagų kokybe, montavimo tvarkingumu ir kūrybišku požiūriu į kiekvieną klientą. Užsisakydami įtempiamų lubų montavimą pas mus, galite būti tikri dėl profesionalaus požiūrio ir kokybiško darbo. Susisiekite su mumis ir mes padėsime sukurti jūsų svajonių lubas!",
+        "lt": "Mūsų portfelyje - daugybė sėkmingų projektų. Mūsų darbai pasižymi aukšta medžiagų kokybe, montavimo tvarkingumu ir kūrybišku požiūriu į kiekvieną klientą. Užsisakydami įtempiamų lubų montavimą pas mus, galite būti tikri dėl profesionalaus požiūrio ir kokybiško darbo. Susisiekite su mumis ir mes padėsime sukurti jūsų svajonių lubas!",
         "lv": "Mūsu portfolio ir daudz veiksmīgu projektu.Mūsu darbu raksturo augstas kvalitātes materiāli, montāžas veikums un radoša pieeja katram klientam. Pasūtot pie mums stiepto griestu montāžu, jūs varat būt droši par profesionālu pieeju un kvalitatīvu darbu. Sazinieties ar mums, un mēs palīdzēsim jums izveidot jūsu sapņu griestus!"
     },
     "text177":{

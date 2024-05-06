@@ -285,7 +285,7 @@ hr {
   position: absolute;
   left: -10%;
   top: 140%;
-  content: "c 9:00 до 20:00";
+  content: "9:00 - 20:00";
   width: 130%;
   height: auto;
   border-radius: 1rem;
@@ -2101,6 +2101,10 @@ hr {
 }
 .footer__item-2-dropdown:hover .footer__item-2-dropbtn {
   color: #d6bd7e;
+}
+
+.text18 {
+  width: 90%;
 }
 
 .reviews-form.active {
