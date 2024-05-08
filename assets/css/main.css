@@ -2104,7 +2104,7 @@ hr {
 }
 
 .text18 {
-  width: 90%;
+  width: 180px;
 }
 
 .reviews-form.active {
@@ -2259,6 +2259,7 @@ hr {
   position: relative;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 .cornices__info {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/cornices-bg.jpg");

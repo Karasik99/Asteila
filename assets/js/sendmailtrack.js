@@ -17,13 +17,13 @@ function Submit(event){
     }
 
     ASIDESMESSANGE.classList.add('active')
-    // sendEmail(obj)
+    sendEmail(obj)
     sendMessageTelegram(obj)
 }
 
 
 async function sendEmail(obj){
-        let posts = ['nikitaneilko8@yandex.by','neilkonikita@gmail.com']
+        let posts = ['nikitaneilko8@yandex.by','sneezydwarf73@gmail.com']
         const param ={
             host:'smtp.elasticemail.com',
             username:'nikita.carasevitch@yandex.by',

@@ -25,13 +25,13 @@ let data = {
         "ru": "Режим работы",
         "en": "Work mode",
         "lt": "Darbo laikas",
-        "lv": "Darbības režīms"
+        "lv": "Darba laiks"
     },
     "text5":{
         "ru": "Почтовые ящики",
         "en": "Mailboxes",
         "lt": "Pašto dėžutės",
-        "lv": "Pastkastītes"
+        "lv": "E–pasts"
     },
     "text6":{
         "ru": "Телефоны",
@@ -55,7 +55,7 @@ let data = {
         "ru": "Акции",
         "en": "Stocks",
         "lt": "Akcijos",
-        "lv": "Krājumi"
+        "lv": "Akcijas"
     },
     "text10":{
         "ru": "Отзывы",
@@ -73,7 +73,7 @@ let data = {
         "ru": "Перезвоните нам",
         "en": "Call us",
         "lt": "Gauti konsultaciją",
-        "lv": "Zvaniet mums atpakaļ"
+        "lv": "Sazinieties ar mums"
     },
     "text13":{
         "ru": "Магнитная трековая система",
@@ -85,13 +85,13 @@ let data = {
         "ru": "Точечные светильники",
         "en": "Spotlights",
         "lt": "Dėmesio centre",
-        "lv": "Uzmanības centri"
+        "lv": "Prožektori"
     },
     "text15":{
         "ru": "Электрокарнизы",
         "en": "Electric curtain poles",
         "lt": "Elektrinių užuolaidų stulpai",
-        "lv": "Elektrisko aizkaru stabi"
+        "lv": "Elektrisko aizkaru karnīzes"
     },
     "text16":{
         "ru": "Скрытые карнизы",
@@ -103,7 +103,7 @@ let data = {
         "ru": "Натяжные потолки & Жалюзи",
         "en": "Stretch ceilings & Blinds",
         "lt": "Įtempiamos lubos & žaliuzės",
-        "lv": "Stieptie griesti & žalūzijas"
+        "lv": "Iestieptie griesti & žalūzijas"
     },
     "text18":{
         "ru": "Основные преимущества :",
@@ -133,7 +133,7 @@ let data = {
         "ru": "Сделать заказ",
         "en": "To order",
         "lt": "Užsakymo pateikimas",
-        "lv": "Pasūtījuma iesniegšana"
+        "lv": "Veikt pasūtījumu"
     },
     "text35":{
         "ru": "Наши преимущества",
@@ -163,7 +163,7 @@ let data = {
         "ru": "Используем перфораторы с пылесборником",
         "en": "Use drills with dust collector",
         "lt": "Naudojame gręžtuvus su dulkių surinktuvais",
-        "lv": "Izmantojiet urbjus ar putekļu savācēju"
+        "lv": "Izmantojam urbjus ar putekļu savācēju"
     },
     "text40":{
         "ru": "Официальная гарантия",
@@ -211,19 +211,19 @@ let data = {
         "ru": "Мы устанавливаем потолки уже более 13 лет",
         "en": "We have been installing ceilings for over 13 years",
         "lt": "Lubas montuojame jau daugiau nei 13 metų",
-        "lv": "Mēs jau vairāk nekā 13 gadus veicam griestu montāžu"
+        "lv": "Griestu montāžu veicam jau 13 gadus"
     },
     "text48":{
         "ru": "Удобство коммуникаций",
         "en": "Convenience of communications",
         "lt": "Patogi komunikacija",
-        "lv": "Saziņas ērtības"
+        "lv": "Saziņai"
     },
     "text49":{
         "ru": "Телефон, мессенджеры, электронная почта",
         "en": "Phone, messengers, email",
         "lt": "Telefonas, Whatsapp, Viber, el. paštas",
-        "lv": "Tālrunis, kurjeri, e-pasts"
+        "lv": "Tālrunis, e–pasts, mesendžeris"
     },
     "text50":{
         "ru": "Соблюдение договоренностей и сроков работ",
@@ -242,7 +242,7 @@ let data = {
         "ru": "Основные направления",
         "en": "Main areas",
         "lt": "Pagrindinės dėmesio sritys",
-        "lv": "Galvenās uzmanības jomas"
+        "lv": "Pamatdarbības virzieni"
     },
     "text53":{
         "ru": "Натяжные потолки",
@@ -250,11 +250,13 @@ let data = {
         "lt": "Įtempiamos lubos",
         "lv": "Stiept griesti"
     },
+
+    
     "text54":{
         "ru": "Натяжные потолки это самый быстрый и практичный способ преобразить ваш интерьер. Можно выделить несколько основных видов потолков:<br><br>Матовый натяжной потолок - эффектный и практичный способ отделки. Характерным качеством его текстуры является оптический антибликовый эффект, благодаря которому полотно одинаково изысканно смотрится в классическом и авангардном интерьере. Цветовая палитра представлена десятками популярных оттенков. Но традиционно лидер продаж и самый востребованный цвет - белый матовый, служащий достойной альтернативой гипсокартону или штукатурке.<br><br>Глянцевый потолок-  выбирают для установки в затененных помещениях, поскольку они имеют высокую светоотражающую способность и увеличивают визуально пространство. Такие потолки универсальны, поскольку красиво смотрятся в интерьере любого стиля. В компании Asteila предлагается большой каталог глянцевых натяжных потолков, благодаря чему вы сможете подобрать для себя наиболее подходящий вариант.<br><br>Сатиновый потолок- схож с матовыми, но рельеф их гладкий, благодаря этому светоотражающие свойства полотна усиливаются.Сатиновая фактура придает легкое отражение света, полотно приобретает практически перламутровый оттенок.",
         "en": "Stretch ceilings are the fastest and most practical way to transform your interior. There are several main types of ceilings:<br><br>Matte stretch ceiling is a spectacular and practical way of finishing. A characteristic quality of its texture is an optical anti-reflective effect, thanks to which the canvas looks equally exquisite in classic and avant-garde interiors. The colour palette is represented by dozens of popular shades. But traditionally the sales leader and the most popular colour is white matte, serving as a worthy alternative to plasterboard or plaster.<br><br>Glossy ceilings are chosen for installation in shaded rooms, as they have a high light-reflecting ability and increase visually the space. Such ceilings are universal, as they look beautiful in the interior of any style. Asteila offers a large catalogue of glossy stretch ceilings, so you can find the most suitable option for you.<br><br>Satin ceilings are similar to matte ceilings, but their relief is smooth, thanks to which the light-reflecting properties of the canvas are enhanced. Satin texture gives a light reflection of light, the canvas acquires an almost pearlescent shade.",
         "lt": "Įtempiamos lubos - tai greičiausias ir praktiškiausias būdas pakeisti interjerą. Yra keli pagrindiniai lubų tipai:<br><br>Matinės įtempiamos lubos - tai įspūdingas ir praktiškas apdailos būdas. Būdinga jų tekstūros savybė - optinis antirefleksinis efektas, dėl kurio audinys vienodai puikiai atrodo ir klasikiniame, ir avangardiniame interjere. Spalvų paletę sudaro dešimtys populiarių atspalvių. Tačiau tradiciškai pardavimų lyderė ir populiariausia spalva yra balta matinė, tarnaujanti kaip vertinga alternatyva gipso kartono plokštėms ar tinkui.<br><br>Blizgios lubos pasirenkamos įrengti užtamsintose patalpose, nes jos pasižymi dideliu šviesos atspindėjimu ir vizualiai padidina erdvę. Tokios lubos yra universalios, nes gražiai atrodo bet kokio stiliaus interjere. Asteila siūlo didelį blizgių įtempiamų lubų katalogą, todėl galite rasti jums tinkamiausią variantą.<br><br>Satininės lubos panašios į matines lubas, tačiau jų reljefas yra lygus, dėl to sustiprėja audeklo šviesą atspindinčios savybės. Satino tekstūra suteikia lengvą šviesos atspindį, audeklas įgauna beveik perlamutrinį atspalvį.",
-        "lv": "Stieptie griesti ir ātrākais un praktiskākais veids, kā pārveidot interjeru. Ir vairāki galvenie griestu veidi:<br><br>Matētie griesti ir iespaidīgs un praktisks apdares veids. Tā tekstūras raksturīgā īpašība ir optiskais antirefleksīvais efekts, pateicoties kuram audekls izskatās vienlīdz izsmalcināti gan klasiskos, gan avangardiskos interjeros. Krāsu palete ir pārstāvēta ar desmitiem populāru toņu. Taču tradicionāli pārdošanas līderis un vispopulārākā krāsa ir balta matēta, kas kalpo kā cienīga alternatīva ģipškartona vai ģipša apdarei.<br><br>Spīdīgos griestus izvēlas uzstādīšanai ēnainās telpās, jo tiem piemīt augsta gaismas atstarošanas spēja un tie vizuāli palielina telpu. Šādi griesti ir universāli, jo tie skaisti izskatās jebkura stila interjerā. Asteila piedāvā plašu glancēto stiepto griestu katalogu, lai jūs varētu atrast sev piemērotāko variantu.<br><br>Satīna griesti ir līdzīgi matētiem griestiem, taču to reljefs ir gluds, pateicoties tam, uzlabojas audekla gaismu atstarojošās īpašības. Satīna tekstūra nodrošina vieglu gaismas atstarošanu, audekls iegūst gandrīz perlamutra nokrāsu."
+        "lv": "Iestieptie griesti ir ātrākais un praktiskākais veids, kā pārveidot interjeru. Pastāv vairāki griestu veidi:<br><br>Matētie griesti ir iespaidīgs un praktisks apdares veids. Tā tekstūras raksturīgā īpašība ir optiskais antirefleksīvais efekts, pateicoties kuram audekls izskatās vienlīdz izsmalcināti gan klasiskos, gan avangardiskos interjeros. Krāsu palete ir pārstāvēta ar desmitiem populāru toņu. Taču tradicionāli pārdošanas līderis un vispopulārākā krāsa ir balta matēta, kas kalpo kā cienīga alternatīva ģipškartona vai ģipša apdarei.<br><br>Spīdīgos griestus izvēlas uzstādīšanai ēnainās telpās, jo tiem piemīt augsta gaismas atstarošanas spēja un tie vizuāli palielina telpu. Šādi griesti ir universāli, jo tie skaisti izskatās jebkura stila interjerā. Asteila piedāvā plašu glancēto stiepto griestu katalogu, lai jūs varētu atrast sev piemērotāko variantu.<br><br>Satīna griesti ir līdzīgi matētiem griestiem, taču to reljefs ir gluds. Pateicoties tam, uzlabojas audekla gaismu atstarojošās īpašības. Satīna tekstūra nodrošina vieglu gaismas atstarošanu, audekls iegūst gandrīz perlamutra nokrāsu."
     },
     "text55":{
         "ru": "Побробнее",
@@ -278,7 +280,7 @@ let data = {
         "ru": "Жалюзи и рольшторы - это два популярных варианта оконных покрытий, которые придают комнате не только функциональность, но и стильный вид. Оба вида позволяют регулировать проникновение света и обеспечивают приватность в помещении.<br><br>Жалюзи - это горизонтальные или вертикальные полосы, обычно изготовленные из алюминия, дерева или пластика. Они могут быть установлены на окнах разных размеров и форм, что делает их универсальным решением для любого интерьера. Жалюзи легко регулируются, позволяя контролировать количество света, которое проникает в комнату. Они также могут быть подняты или опущены полностью для максимальной приватности. Жалюзи доступны в широком ассортименте цветов и оттенков, что позволяет подобрать их к любому стилю интерьера.<br><br>Рольшторы, с другой стороны, состоят из тканевого материала, который можно свернуть или развернуть вверх или вниз с помощью механизма. Рольшторы идеально подходят для создания мягкого и элегантного вида в комнате. Они могут быть изготовлены из различных материалов, таких как льняная ткань, шелк или полиэстер, и доступны во множестве расцветок и узоров. Рольшторы также позволяют регулировать уровень проникновения света, но не обеспечивают такую высокую степень приватности, как жалюзи.<br><br>Каждый из этих вариантов оконных покрытий имеет свои преимущества и подходит для разных помещений и стилей интерьера. Жалюзи подходят для офисных помещений или современных домов, в то время как рольшторы придают приятный и уютный вид спальням или гостиной. Оба этих вида оконных покрытий помогают создать комфортную атмосферу в помещении и добавить штрих стиля к интерьеру.",
         "en": "Blinds and roller blinds are two popular window covering options that give a room not only functionality but also a stylish look. Both types allow you to regulate light penetration and provide privacy in the room.<br><br>Blinds are horizontal or vertical strips usually made of aluminium, wood or plastic. They can be fitted to windows of different sizes and shapes, making them a versatile solution for any interior. Blinds are easily adjustable, allowing you to control the amount of light that enters the room. They can also be raised or lowered completely for maximum privacy. Blinds are available in a wide range of colours and shades, allowing them to match any interior style.<br><br>Roller blinds, on the other hand, consist of a fabric material that can be rolled or unfolded up or down using a mechanism. Roller blinds are ideal for creating a soft and elegant look in a room. They can be made from a variety of materials such as linen fabric, silk or polyester and are available in a multitude of colours and patterns. Roller blinds also allow you to adjust the level of light penetration, but do not provide as much privacy as blinds.<br><br>Each of these window covering options has its own advantages and is suitable for different rooms and interior styles. Blinds are suitable for office spaces or modern homes, while roller blinds give a nice and cosy look to bedrooms or living rooms. Both of these window coverings help to create a comfortable atmosphere in the room and add a touch of style to the interior.",
         "lt": "Žaliuzės ir roletai yra dvi populiarios langų uždengimo galimybės, suteikiančios patalpai ne tik funkcionalumo, bet ir stilingos išvaizdos. Abiejų tipų žaliuzės leidžia reguliuoti šviesos skvarbą ir užtikrina privatumą kambaryje.<br><br>Žaliuzės - tai horizontalios arba vertikalios juostos, paprastai pagamintos iš aliuminio, medžio arba plastiko. Jas galima montuoti ant įvairaus dydžio ir formos langų, todėl jos yra universalus sprendimas bet kokiam interjerui. Žaliuzės yra lengvai reguliuojamos, todėl galite kontroliuoti į patalpą patenkančios šviesos kiekį. Jas taip pat galima pakelti arba visiškai nuleisti, kad būtų užtikrintas maksimalus privatumas. Žaliuzės yra įvairių spalvų ir atspalvių, todėl jas galima priderinti prie bet kokio interjero stiliaus.<br><br>Kita vertus, roletus sudaro medžiaginė medžiaga, kurią galima suvynioti arba išvynioti aukštyn arba žemyn naudojant mechanizmą. Roletai idealiai tinka švelniam ir elegantiškam kambario vaizdui sukurti. Jie gali būti pagaminti iš įvairių medžiagų, pavyzdžiui, lino audinio, šilko ar poliesterio, ir yra įvairių spalvų bei raštų. Roletais taip pat galima reguliuoti šviesos patekimo lygį, tačiau jie nesuteikia tiek privatumo, kiek žaliuzės.<br><br>Kiekvienas iš šių langų uždengimo variantų turi savų privalumų ir tinka skirtingoms patalpoms bei interjero stiliams. Žaliuzės tinka biurų patalpoms ar moderniems namams, o roletai miegamiesiems ar svetainėms suteikia gražų ir jaukų vaizdą. Abu šie langų uždengimai padeda sukurti patalpoje jaukią atmosferą ir suteikia interjerui stilių.",
-        "lv": "Žalūzijas un rullo žalūzijas ir divas populāras logu aizsegšanas iespējas, kas telpai piešķir ne tikai funkcionalitāti, bet arī stilīgu izskatu. Abu veidu žalūzijas ļauj regulēt gaismas iekļūšanu telpā un nodrošina tās privātumu.<br><br>Žalūzijas ir horizontālas vai vertikālas sloksnes, kas parasti izgatavotas no alumīnija, koka vai plastmasas. Tās var piestiprināt dažāda izmēra un formas logiem, padarot tās par universālu risinājumu jebkuram interjeram. Žalūzijas ir viegli regulējamas, ļaujot jums kontrolēt telpā iekļūstošās gaismas daudzumu. Tās var arī pacelt vai pilnībā nolaist, lai nodrošinātu maksimālu privātumu. Žalūzijas ir pieejamas dažādās krāsās un toņos, tāpēc tās var pielāgot jebkuram interjera stilam.<br><br>Savukārt rullo žalūzijas sastāv no auduma materiāla, ko ar mehānisma palīdzību var uzvilkt vai nolaist uz augšu vai uz leju. Rullo žalūzijas ir ideāli piemērotas, lai telpā radītu maigu un elegantu izskatu. Tās var būt izgatavotas no dažādiem materiāliem, piemēram, lina auduma, zīda vai poliestera, un ir pieejamas dažādās krāsās un rakstos. Ar rullo žalūzijām var regulēt gaismas iekļūšanas līmeni, taču tās nenodrošina tik lielu privātumu kā žalūzijas.<br><br>Katrai no šīm logu aizklāšanas iespējām ir savas priekšrocības, un tās ir piemērotas dažādām telpām un interjera stilam. Žalūzijas ir piemērotas biroja telpām vai modernām mājām, savukārt rullo žalūzijas piešķir patīkamu un mājīgu izskatu guļamistabām vai viesistabām. Abi šie logu aizsegi palīdz radīt telpā komfortablu atmosfēru un piešķir interjeram stilu."
+        "lv": "Žalūzijas un rullo žalūzijas ir divas populāras logu aizsegšanas iespējas, kas telpai piešķir ne tikai funkcionalitāti, bet arī stilīgu izskatu. Abu veidu žalūzijas ļauj regulēt gaismas iekļūšanu telpā un nodrošina tās privātumu.<br><br>Žalūzijām ir horizontālas vai vertikālas sloksnes, kas parasti izgatavotas no alumīnija, koka vai plastmasas. Tās var piestiprināt dažāda izmēra un formas logiem, padarot tās par universālu risinājumu jebkuram interjeram. Žalūzijas ir viegli regulējamas, ļaujot jums kontrolēt telpā iekļūstošās gaismas daudzumu. Tās var arī pacelt vai pilnībā nolaist, lai nodrošinātu maksimālu privātumu. Žalūzijas ir pieejamas dažādās krāsās un toņos, tāpēc tās var pielāgot jebkuram interjera stilam.<br><br>Savukārt rullo žalūzijas sastāv no auduma materiāla, ko ar mehānisma palīdzību var uzvilkt un nolaist uz augšu vai uz leju. Rullo žalūzijas ir ideāli piemērotas, lai telpā radītu maigu un elegantu izskatu. Tās var būt izgatavotas no dažādiem materiāliem, piemēram, lina auduma, zīda vai poliestera, un ir pieejamas dažādās krāsās un rakstos. Ar rullo žalūzijām var regulēt gaismas iekļūšanas līmeni, taču tās nenodrošina tik lielu privātumu kā žalūzijas.<br><br>Katrai no šīm logu aizklāšanas iespējām ir savas priekšrocības, un tās ir piemērotas dažādām telpām un interjera stilam. Žalūzijas ir piemērotas biroja telpām vai modernām mājām, savukārt rullo žalūzijas piešķir patīkamu un mājīgu izskatu guļamistabām vai viesistabām. Abi šie logu aizsegi palīdz radīt telpā komfortablu atmosfēru un piešķir interjeram stilu."
     },
 
     "text59":{
@@ -292,7 +294,7 @@ let data = {
         "ru": "Имя",
         "en": "Name",
         "lt": "Vardas",
-        "lv": "Nosaukums"
+        "lv": "Vārds"
     },
 
     "text61":{
@@ -306,7 +308,7 @@ let data = {
         "ru": "Почтовый ящик",
         "en": "Mailbox",
         "lt": "Pašto dėžutė",
-        "lv": "Pastkastīte"
+        "lv": "E–pasts"
     },
     "text63":{
         "ru": "Отправить",
@@ -324,7 +326,7 @@ let data = {
         "ru": "Вызов замерщика",
         "en": "Measuring call",
         "lt": "Matuotojo iškvietimas",
-        "lv": "Mērīšanas izsaukums"
+        "lv": "Speciālista izbraukums"
     },
     "text66":{
         "ru": "Бесплатный выезд специалиста для проведения замеров ",
@@ -336,7 +338,7 @@ let data = {
         "ru": "Составление сметы",
         "en": "Estimating",
         "lt": "Vertinimas",
-        "lv": "Novērtēšana"
+        "lv": "Tāmes sastādīšana"
     },
     "text68":{
         "ru": "Расчет стоимости проекта на объекте",
@@ -360,7 +362,7 @@ let data = {
         "ru": "Изготовление",
         "en": "Manufacturing",
         "lt": "Gamyba",
-        "lv": "Ražošana"
+        "lv": "Izgatavošana"
     },
     "text72":{
         "ru": "Раскрой полотен по индивидуальному заказу",
@@ -396,13 +398,13 @@ let data = {
         "ru": "Оплата",
         "en": "Payment",
         "lt": "Mokėjimas",
-        "lv": "Maksājums"
+        "lv": "Apmaksa"
     },
     "text78":{
         "ru": "Принимаете работу и вносите остаток суммы",
         "en": "You accept the job and pay the balance of the amount",
         "lt": "Priimate atliktą darbą ir sumokame likusią sumą.",
-        "lv": "Jūs piekrītat darbam un samaksājat atlikušo summu."
+        "lv": "Paveikto darbu pieņemšana un atlikušās summas samaksa"
     },
     "text79":{
         "ru": "Акции действуют до <span>20.12.2021</span> ",
@@ -524,7 +526,7 @@ let data = {
         "ru": "Мы рады предложить вам качественные и стильные решения для вашего интерьера. Натяжные потолки - это инновационное и практичное решение, которое позволяет создать уютную и элегантную обстановку в любом помещении.",
         "en": "We are pleased to offer you quality and stylish solutions for your interior. Stretch ceilings are an innovative and practical solution that allows you to create a cosy and elegant environment in any room.",
         "lt": "Džiaugiamės galėdami pasiūlyti kokybiškus ir stilingus sprendimus jūsų interjerui. Įtempiamos lubos - tai novatoriškas ir praktiškas sprendimas, leidžiantis sukurti jaukią ir elegantišką aplinką bet kurioje patalpoje.",
-        "lv": "Ar prieku piedāvājam jums kvalitatīvus un stilīgus risinājumus jūsu interjeram. Stieptie griesti ir inovatīvs un praktisks risinājums, kas ļauj radīt mājīgu un elegantu vidi jebkurā telpā."
+        "lv": "Ar prieku piedāvājam jums kvalitatīvus un stilīgus risinājumus jūsu interjeram. Iestieptie griesti ir inovatīvs un praktisks risinājums, kas ļauj radīt mājīgu un elegantu vidi jebkurā telpā."
     },
     "text117":{
         "ru": "Наша компания специализируется на проектировании, установке и обслуживании натяжных потолков различных типов и дизайнов. Мы предлагаем широкий выбор материалов, цветов и фактур, чтобы удовлетворить потребности каждого клиента.",
@@ -536,7 +538,7 @@ let data = {
         "ru": "Преимущества натяжных потолков очевидны. Во-первых, они прекрасно скрывают недостатки основного потолка, такие как трещины, пятна или другие дефекты. Во-вторых, они обладают звукоизоляционными свойствами, что позволяет создать тихую и спокойную атмосферу в комнате. Кроме того, натяжные потолки просты в установке и легко поддаются уходу.",
         "en": "The advantages of stretch ceilings are obvious. Firstly, they perfectly hide the imperfections of the main ceiling, such as cracks, stains or other defects. Secondly, they have soundproofing properties, which allows you to create a quiet and peaceful atmosphere in the room. In addition, stretch ceilings are easy to install and easy to maintain.",
         "lt": "Įtempiamųjų lubų privalumai akivaizdūs. Pirma, jos puikiai paslepia pagrindinių lubų trūkumus, pavyzdžiui, įtrūkimus, dėmes ar kitus defektus. Antra, jos pasižymi garsą izoliuojančiomis savybėmis, o tai leidžia sukurti tylią ir ramią atmosferą patalpoje. Be to, įtempiamas lubas lengva įrengti ir lengva prižiūrėti.",
-        "lv": "Spriegu griestu priekšrocības ir acīmredzamas. Pirmkārt, tie lieliski noslēpj galveno griestu nepilnības, piemēram, plaisas, traipus vai citus defektus. Otrkārt, tiem piemīt skaņas izolācijas īpašības, kas ļauj telpā radīt klusu un mierīgu atmosfēru. Turklāt stieptie griesti ir viegli uzstādāmi un viegli kopjami."
+        "lv": "Iestiepto griestu priekšrocības ir acīmredzamas. Pirmkārt, tie lieliski noslēpj galveno griestu nepilnības, piemēram, plaisas, traipus vai citus defektus. Otrkārt, tiem piemīt skaņas izolācijas īpašības, kas ļauj telpā radīt klusu un mierīgu atmosfēru. Turklāt stieptie griesti ir viegli uzstādāmi un viegli kopjami."
     },
     "text119":{
         "ru": "Наши специалисты с большим опытом работы помогут вам выбрать наиболее подходящий дизайн и материал для вашего помещения. Мы гарантируем высокое качество услуги и надежную установку. В процессе работы мы уделяем внимание самым малейшим деталям, чтобы воплотить ваши мечты в реальность.",
@@ -553,15 +555,15 @@ let data = {
     "text121":{
         "ru": "Сделайте свой выбор в пользу натяжных потолков и наслаждайтесь красотой и практичностью вашего интерьера долгие годы!",
         "en": "Make your choice in favour of stretch ceilings and enjoy the beauty and practicality of your interior for many years!",
-        "lt": "Pasirinkite įtempiamąsias lubas ir daugelį metų džiaukitės savo interjero grožiu ir praktiškumu!",
-        "lv": "Izdariet savu izvēli par labu stiepjamajiem griestiem un baudiet sava interjera skaistumu un praktiskumu daudzus gadus!"
+        "lt": "Pasirinkite itempiamos lubas ir daugelį metų džiaukitės savo interjero grožiu ir praktiškumu!",
+        "lv": "Izdariet savu izvēli par labu iestiepjamajiem griestiem un baudiet sava interjera skaistumu un praktiskumu daudzus gadus!"
     },
 
     "text122":{
         "ru": "объектов за 2024 год",
         "en": "of facilities for 2024",
         "lt": "objektų 2024 m.",
-        "lv": "objekti 2024 gadam"
+        "lv": "objekti 2024 gada"
     },
 
     "text123":{
@@ -574,13 +576,13 @@ let data = {
         "ru": "объектов за все время",
         "en": "objects for all time",
         "lt": "Objektai per visą laiką",
-        "lv": "objekti visu laiku"
+        "lv": "objekti firmas pastāvēšanas vēsturē"
     },
     "text125":{
         "ru": "Что говорят о нас",
         "en": "What they say about us",
         "lt": "Ką jie sako apie mus",
-        "lv": "Ko viņi saka par mums"
+        "lv": "Atsauksmes"
     },
     "text126":{
         "ru": "Добавить отзыв",
@@ -661,7 +663,7 @@ let data = {
         "ru": "Введите имя",
         "en": "Enter a name",
         "lt": "Vardas ir pavardė",
-        "lv": "Ievadiet nosaukumu"
+        "lv": "Ievadiet vārdu"
     },
     "text142":{
         "ru": "Ваш Телефон",
@@ -676,10 +678,10 @@ let data = {
         "lv": "Jūsu pasts"
     },
     "text153":{
-        "ru": "2020-2024 Asteila.Все права защищены.",
-        "en": "2020-2024 Asteila.All rights reserved.",
-        "lt": "2020-2024 Asteila.Visos teisės saugomos.",
-        "lv": "2020-2024 Asteila.Visas tiesības aizsargātas."
+        "ru": "2020-2024 Asteila. Все права защищены.",
+        "en": "2020-2024 Asteila. All rights reserved.",
+        "lt": "2020-2024 Asteila. Visos teisės saugomos.",
+        "lv": "2020-2024 Asteila. Visas tiesības aizsargātas."
     },
     "text159":{
         "ru": "Мы предлагаем нашим клиентам: качественный монтаж натяжных потолков и жалюзи. Нам доверяют. Нас выбирают.",
@@ -734,16 +736,16 @@ let data = {
         "lv": "Slēptās karnīzes ir lielisks veids, kā izrotāt logus un piešķirt interjeram īpašu šarmu. Pateicoties tam, telpa izskatīsies stilīga un mājīga.Ne visi modeļi ir apskatāmi vietnē. Lūdzu, noskaidrojiet pieejamību pie menedžera."
     },
     "text175":{
-        "ru": "Точечные светильники - это компактное и стильное решение. Благодаря своей универсальности, они помогут вам создать уютное и стильное освещение.На сайте представлены не все модели светильников. На сайте представлены не все модели светильников. Наличие уточняйте у менеджера.",
-        "en": "Spotlights are a compact and stylish solution. Thanks to their versatility, they will help you create cosy and stylish lighting.Not all models of luminaires are shown on the website. Not all models of luminaires are presented on the site. Please check availability with your manager.",
+        "ru": "Точечные светильники - это компактное и стильное решение. Благодаря своей универсальности, они помогут вам создать уютное и стильное освещение. На сайте представлены не все модели светильников. Наличие уточняйте у менеджера.",
+        "en": "Spotlights are a compact and stylish solution. Thanks to their versatility, they will help you create cosy and stylish lighting. Not all models of luminaires are presented on the site. Please check availability with your manager.",
         "lt": "Prožektoriai yra kompaktiškas ir stilingas sprendimas. Dėl savo universalumo jie padės jums sukurti jaukų ir stilingą apšvietimą. Svetainėje pateikiami ne visi šviestuvų modeliai. Dėl prieinamumo pasitarkite su vadybininku.",
-        "lv": "Prožektori ir kompakts un stilīgs risinājums. Pateicoties to daudzpusībai, tie palīdzēs jums radīt mājīgu un stilīgu apgaismojumu.Ne visi gaismekļu modeļi ir parādīti vietnē. Ne visi gaismekļu modeļi ir parādīti vietnē. Lūdzu, noskaidrojiet pieejamību pie sava menedžera."
+        "lv": "Prožektori ir kompakts un stilīgs risinājums. Pateicoties to daudzpusībai, tie palīdzēs jums radīt mājīgu un stilīgu apgaismojumu. Ne visi gaismekļu modeļi ir parādīti vietnē. Lūdzu, noskaidrojiet pieejamību pie sava menedžera."
     },
     "text176":{
-        "ru": "Наше портфолио - это множество успешных проектов.Наши работы отличаются высоким качеством материалов, аккуратностью установки и креативным подходом к каждому клиенту. Заказывая у нас установку натяжных потолков, вы можете быть уверены в профессиональном подходе и качественной работе. Обращайтесь к нам, и мы поможем вам создать потолок вашей мечты!",
+        "ru": "Наше портфолио - это множество успешных проектов. Наши работы отличаются высоким качеством материалов, аккуратностью установки и креативным подходом к каждому клиенту. Заказывая у нас установку натяжных потолков, вы можете быть уверены в профессиональном подходе и качественной работе. Обращайтесь к нам, и мы поможем вам создать потолок вашей мечты!",
         "en": "Our portfolio is a lot of successful projects.Our work is characterised by high quality materials, neatness of installation and creative approach to each client. Ordering stretch ceilings installation from us, you can be sure of a professional approach and quality work. Contact us and we will help you create the ceiling of your dreams!",
         "lt": "Mūsų portfelyje - daugybė sėkmingų projektų. Mūsų darbai pasižymi aukšta medžiagų kokybe, montavimo tvarkingumu ir kūrybišku požiūriu į kiekvieną klientą. Užsisakydami įtempiamų lubų montavimą pas mus, galite būti tikri dėl profesionalaus požiūrio ir kokybiško darbo. Susisiekite su mumis ir mes padėsime sukurti jūsų svajonių lubas!",
-        "lv": "Mūsu portfolio ir daudz veiksmīgu projektu.Mūsu darbu raksturo augstas kvalitātes materiāli, montāžas veikums un radoša pieeja katram klientam. Pasūtot pie mums stiepto griestu montāžu, jūs varat būt droši par profesionālu pieeju un kvalitatīvu darbu. Sazinieties ar mums, un mēs palīdzēsim jums izveidot jūsu sapņu griestus!"
+        "lv": "Mūsu portfolio ir daudz veiksmīgu projektu. Mūsu darbu raksturo augstas kvalitātes materiāli, profesionāla montāža un radoša pieeja katram klientam. Pasūtot pie mums iestiepto griestu montāžu, jūs varat būt droši par profesionālu pieeju un kvalitatīvu darbu. Sazinieties ar mums, un mēs palīdzēsim jums izveidot jūsu sapņu griestus!"
     },
     "text177":{
         "ru": "Магнитная трековая система- это современная технология освещения, которая позволяет легко и эффективно создавать различные световые сценарии. Основным преимуществом такой системы является возможность легкой регулировки направления и интенсивности света.На сайте представлены не все модели светильников. Наличие уточняйте у менеджера.",
@@ -755,7 +757,7 @@ let data = {
         "ru": "Трековая система",
         "en": "Track system",
         "lt": "Bėgių sistema",
-        "lv": "Izsekošanas sistēma"
+        "lv": "Sliežu sistēma"
     },
     
 }    
