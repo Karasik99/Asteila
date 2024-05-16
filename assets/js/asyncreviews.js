@@ -47,24 +47,27 @@ function SendReviews(event){
   event.target.reset()
   let obj ={}
 
-  let currentdate = new Date();
-  let datetime = currentdate.getDate() + "."
-                + (currentdate.getMonth()+1)  + "." 
-                + currentdate.getFullYear()
+  let today = new Date();
+  let dd = String(today.getDate()).padStart(2, '0');
+  let mm = String(today.getMonth() + 1).padStart(2, '0'); 
+  let yyyy = today.getFullYear();
+  today = dd + '/' + mm + '/' + yyyy;
   
   for (var pair of formdata.entries()) {
       obj[pair[0]] = pair[1]  
   }
 
+  
   let newreview = {
     username:obj.name,
     email:obj.email,
     city:obj.city,
     review:obj.review,
-    date:datetime,
+    date:today,
     stars:obj.stars
   };
-  
+
+
   sendReviewTelegram()
   fetch('https://660996190f324a9a28837e41.mockapi.io/Comments', {
   method: 'POST',

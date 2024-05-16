@@ -1,7 +1,6 @@
 
 const CALLBTNS = document.querySelectorAll('.langs')
 const LANGSMENU = document.querySelector('.langs-items')
-let CURRENTLANG='en';
 
 CALLBTNS.forEach(element => {
     element.addEventListener('click',(e)=>{OpenLangs(e)})

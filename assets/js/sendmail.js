@@ -27,23 +27,24 @@ function Submit(event){
     obj.ANGLESVALUE = ANGLESVALUE.innerHTML
     obj.RESULT = RESULT.innerHTML
     ASIDESMESSANGE.classList.add('active')
-    // sendEmail(obj)
-    sendMessageTelegram(obj)
+    sendEmail(obj)
+    // sendMessageTelegram(obj)
 }
 
 
 async function sendEmail(obj){
-        let posts = ['nikitaneilko8@yandex.by','neilkonikita@gmail.com']
+        let posts = ['nikitaneilko8@yandex.by','nikita.carasevitch@yandex.by']
         const param ={
             host:'smtp.elasticemail.com',
-            username:'nikita.carasevitch@yandex.by',
-            password:'B2FCEC0755143E5792134C4D30F3628F0C23',
-            from:'nikita.carasevitch@yandex.by',
+            username:'asteilasms@gmail.com',
+            password:'59531F481CEB51CCE070DF58A3BAE135DAD6',
+            from:'asteilasms@gmail.com',
             subject:'Новая заявка с сайта',
         }
         posts.forEach(element => { 
             try{
                 Email.send({
+                    SecureToken: 'aff345ea-b922-49cb-9cc4-0b72d6410466',
                     Host : param.host,
                     Username : param.username,
                     Password : param.password,
