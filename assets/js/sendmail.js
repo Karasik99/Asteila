@@ -33,23 +33,24 @@ function Submit(event){
 
 
 async function sendEmail(obj){
-        let posts = ['nikitaneilko8@yandex.by','nikita.carasevitch@yandex.by']
+        let posts = ['nikitaneilko8@yandex.by','nikita.carasevitch@yandex.by','asteilasms@gmail.com']
         const param ={
             host:'smtp.elasticemail.com',
             username:'asteilasms@gmail.com',
-            password:'59531F481CEB51CCE070DF58A3BAE135DAD6',
+            password:'063A18AD8C3454DA253594A0520BEA279C95',
             from:'asteilasms@gmail.com',
             subject:'Новая заявка с сайта',
         }
-        posts.forEach(element => { 
+        posts.forEach(element => {
             try{
                 Email.send({
-                    SecureToken: 'aff345ea-b922-49cb-9cc4-0b72d6410466',
+                    // SecureToken : "41a6c84a-31eb-4fe0-9a44-a1cfa3548bb7",
                     Host : param.host,
                     Username : param.username,
                     Password : param.password,
                     To : `${element}`,
                     From : param.from,
+                    Port: 2525,
                     Subject : param.subject,
                     Body : `
                     <h2>Новый клиент хочет узнать подробнее о потолках</h2>
