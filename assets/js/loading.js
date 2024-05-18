@@ -13,7 +13,7 @@ let LOAD = document.querySelector('.loading')
 //     }
 // }))
 
-document.body.onload = function(){
+document.addEventListener('DOMContentLoaded', function(){
     LOAD.classList.add('active')
     BODY.classList.remove('activebody')
     GetReviews()
@@ -24,4 +24,4 @@ document.body.onload = function(){
     else{
         Translate(lang)
     }
-}
+})
