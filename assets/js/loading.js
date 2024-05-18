@@ -13,7 +13,7 @@ let LOAD = document.querySelector('.loading')
 //     }
 // }))
 
-document.addEventListener('load', function(){
+document.addEventListener('onload', function(){
     LOAD.classList.add('active')
     BODY.classList.remove('activebody')
     GetReviews()
