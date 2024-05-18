@@ -12,7 +12,7 @@ let LOAD = document.querySelector('.loading')
 // }))
 
 
-document.body.onload = function(){
+window.onload = function(){
     LOAD.classList.add('active')
     BODY.classList.remove('activebody')
     let lang = localStorage.getItem('lang')
