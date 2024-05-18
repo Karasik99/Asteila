@@ -62,12 +62,14 @@ hr {
   position: relative;
   overflow-y: scroll;
   background-color: #f1f1f1;
+  touch-action: auto;
   height: auto;
   width: 100%;
 }
 
 .activebody {
   overflow-y: hidden;
+  touch-action: none;
 }
 
 .loading {
@@ -1715,7 +1717,6 @@ hr {
 
 .popup-form {
   z-index: 13000;
-  opacity: 1;
   background-color: #999;
   border-radius: 1rem;
   width: 70%;
@@ -1823,7 +1824,7 @@ hr {
 }
 
 .reviews-form {
-  z-index: 1000;
+  z-index: 13000;
   opacity: 1;
   background-color: #838383;
   border-radius: 1rem;

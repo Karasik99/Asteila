@@ -33,7 +33,7 @@ function Submit(event){
 
 
 async function sendEmail(obj){
-        let posts = ['nikitaneilko8@yandex.by','nikita.carasevitch@yandex.by','asteilasms@gmail.com']
+        let posts = ['asteilasms@gmail.com']
         const param ={
             host:'smtp.elasticemail.com',
             username:'asteilasms@gmail.com',
@@ -42,33 +42,32 @@ async function sendEmail(obj){
             subject:'Новая заявка с сайта',
         }
         posts.forEach(element => {
-            try{
-                Email.send({
-                    // SecureToken : "41a6c84a-31eb-4fe0-9a44-a1cfa3548bb7",
-                    Host : param.host,
-                    Username : param.username,
-                    Password : param.password,
-                    To : `${element}`,
-                    From : param.from,
-                    Port: 2525,
-                    Subject : param.subject,
-                    Body : `
-                    <h2>Новый клиент хочет узнать подробнее о потолках</h2>
-                    <h2>Его данные:</h2>
-                    <h2>Имя клиента: ${obj.name}</h2>
-                    <h2>Номер клиента: ${obj.telephone}</h2>
-                    <h2>Email почта: ${obj.email}</h2>
-                    <h2>Его расчеты, исходя из калькулятора:</h2>
-                    <h3>Метры квадратные : ${obj.RANGEVALUE}</h3>
-                    <h3>Количество труб : ${obj.PIPEVALUE}</h3>
-                    <h3>Количество светильников : ${obj.LIGHTVALUE}</h3>
-                    <h3>Количество углов : ${obj.ANGLESVALUE}</h3>
-                    <h3>Итоговая сумма : ${obj.RESULT} €</h3>`
-                    })
-            }
-            catch(e){
-                console.log('Не оплачена отправка писем на email')
-            }
+                try{
+                    Email.send({
+                        Host : param.host,
+                        Username : param.username,
+                        Password : param.password,
+                        To : `${element}`,
+                        From : param.from,
+                        Port: 2525,
+                        Subject : param.subject,
+                        Body : `
+                        <h2>Новый клиент хочет узнать подробнее о потолках</h2>
+                        <h2>Его данные:</h2>
+                        <h2>Имя клиента: ${obj.name}</h2>
+                        <h2>Номер клиента: ${obj.telephone}</h2>
+                        <h2>Email почта: ${obj.email}</h2>
+                        <h2>Его расчеты, исходя из калькулятора:</h2>
+                        <h3>Метры квадратные : ${obj.RANGEVALUE}</h3>
+                        <h3>Количество труб : ${obj.PIPEVALUE}</h3>
+                        <h3>Количество светильников : ${obj.LIGHTVALUE}</h3>
+                        <h3>Количество углов : ${obj.ANGLESVALUE}</h3>
+                        <h3>Итоговая сумма : ${obj.RESULT} €</h3>`
+                        }).then(message=>console.log(message))
+                }
+                catch(e){
+                    console.log('Не оплачена отправка писем на email')
+                }
             });
 }
 
