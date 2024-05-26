@@ -28,7 +28,7 @@ function Submit(event){
     obj.RESULT = RESULT.innerHTML
     ASIDESMESSANGE.classList.add('active')
     sendEmail(obj)
-    // sendMessageTelegram(obj)
+    sendMessageTelegram(obj)
 }
 
 

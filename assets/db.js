@@ -407,7 +407,7 @@ let data = {
         "lv": "Paveikto darbu pieņemšana un atlikušās summas samaksa"
     },
     "text79":{
-        "ru": "Акции действуют до <span>20.12.2021</span> ",
+        "ru": "Акции действуют до <span>30.06.2024</span> ",
         "en": "The promotions are valid until <span>20.12.2021</span> ",
         "lt": "Akcijos galioja iki <span>20.12.2021</span>",
         "lv": "Akcijas ir spēkā līdz <span>20.12.2021</span>"
