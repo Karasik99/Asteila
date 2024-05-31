@@ -156,7 +156,7 @@ async function Slider(){
 async function sendReviewTelegram(){
   const token =  "6536032829:AAGJt84Fx5iABijzDdj9YoF7kYsICDFp0AU"
   const chat_id = '-1002115025266'
-  let text = `На сайте Asteila,размещен отзыв https://github.com/Karasik99/Asteila`
+  let text = `На сайте Asteila,размещен отзыв https://asteila.com/`
   const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${text}/` 
   let api = new XMLHttpRequest();
   api.open("GET",url,'true');

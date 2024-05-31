@@ -17,7 +17,7 @@ function Submit(event){
     }
 
     ASIDESMESSANGE.classList.add('active')
-    sendEmail(obj)
+    // sendEmail(obj)
     sendMessageTelegram(obj)
 }
 
